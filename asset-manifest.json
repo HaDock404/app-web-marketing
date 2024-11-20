@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/app-web-marketing/static/css/main.58462fbc.css",
+    "main.js": "/app-web-marketing/static/js/main.d7d29a1e.js",
+    "static/js/453.ba5eb343.chunk.js": "/app-web-marketing/static/js/453.ba5eb343.chunk.js",
+    "index.html": "/app-web-marketing/index.html",
+    "main.58462fbc.css.map": "/app-web-marketing/static/css/main.58462fbc.css.map",
+    "main.d7d29a1e.js.map": "/app-web-marketing/static/js/main.d7d29a1e.js.map",
+    "453.ba5eb343.chunk.js.map": "/app-web-marketing/static/js/453.ba5eb343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58462fbc.css",
+    "static/js/main.d7d29a1e.js"
+  ]
+}
