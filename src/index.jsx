@@ -7,14 +7,20 @@ import {
   Route,
 } from "react-router-dom";
 
-import App from './pages/App';
+import './styles/normalize.css'
+import GlobalStyle from './styles/createGlobalStyle.jsx'
+import ScrollToTop from "./styles/ScrollToTop";
+
+import HomePage from './pages/HomePage';
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
+    <GlobalStyle/>
+    <ScrollToTop />
         <Routes>
-          <Route path="/" element={<App />}/>
+          <Route path="/" element={<HomePage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
