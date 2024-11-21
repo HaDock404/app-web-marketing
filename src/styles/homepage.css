@@ -1,0 +1,24 @@
+.page_section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#small_page_el1 {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+#large_page_el1 {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+#large_page_el2 {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}

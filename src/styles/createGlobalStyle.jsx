@@ -7,6 +7,7 @@ const StyledGlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+        overscroll-behavior: none;
     }    
 `
 
