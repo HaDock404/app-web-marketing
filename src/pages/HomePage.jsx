@@ -1,15 +1,15 @@
 //burger menu https://alvarotrigo.com/blog/hamburger-menu-css/
 import React, { useState, useEffect } from "react";
 
-import Test1 from './Test1'
-import Test2 from './Test2'
+import LargePage from './LargePage'
+import SmallPage from './SmallPage'
 
 function HomePage() {
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1000);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 850);
 
     useEffect(() => {
         const handleResize = () => {
-          setIsLargeScreen(window.innerWidth > 1000);
+          setIsLargeScreen(window.innerWidth > 850);
         };
     
         window.addEventListener("resize", handleResize);
@@ -20,7 +20,7 @@ function HomePage() {
     }, []);
 
     return (
-        <div>{isLargeScreen ? <Test1 /> : <Test2 />}</div>
+        <div>{isLargeScreen ? <LargePage /> : <SmallPage />}</div>
     )
 }
 
