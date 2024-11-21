@@ -8,6 +8,9 @@ const StyledGlobalStyle = createGlobalStyle`
         padding: 0;
         overflow-x: hidden;
         overscroll-behavior: none;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        ont-style: normal;
     }    
 `
 

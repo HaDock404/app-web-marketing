@@ -8,17 +8,17 @@
 #small_page_el1 {
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: #6400E3;
 }
 
 #large_page_el1 {
     width: 50%;
     height: 100%;
-    background-color: blue;
+    background-color: white;
 }
 
 #large_page_el2 {
     width: 50%;
     height: 100%;
-    background-color: red;
+    background-color: #6400E3;
 }
