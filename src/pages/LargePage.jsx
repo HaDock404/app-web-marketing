@@ -1,10 +1,12 @@
-import Header from "../components/Header"
+import HeaderLargePage from "../components/HeaderLargePage"
+import IntroLargePage from "../components/IntroLargePage"
 
 function LargePage() {
     return (
         <section className="page_section">
             <article id="large_page_el1">
-                <Header />
+                <HeaderLargePage />
+                <IntroLargePage />
             </article>
             <article id="large_page_el2"></article>
         </section>

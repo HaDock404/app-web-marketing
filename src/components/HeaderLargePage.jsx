@@ -1,7 +1,7 @@
 import '../styles/header.css'
 import { Link } from 'react-router-dom'
 
-function Header() {
+function HeaderLargePage() {
     return (
         <header id='header'>
             <h1 id='header_h1'>
@@ -28,4 +28,4 @@ function Header() {
     )
 }
 
-export default Header
+export default HeaderLargePage
