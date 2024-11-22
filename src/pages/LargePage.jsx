@@ -3,6 +3,7 @@ import IntroLargePage from "../components/IntroLargePage"
 import MessageLargePage from "../components/MessageLargePage"
 import ImageLargePage from "../components/ImageLargePage"
 import ProductsLargePage from "../components/ProductsLargePage"
+import FooterLargePage from "../components/FooterLargePage"
 
 function LargePage() {
     return (
@@ -11,6 +12,7 @@ function LargePage() {
                 <HeaderLargePage />
                 <IntroLargePage />
                 <ProductsLargePage />
+                <FooterLargePage />
             </article>
             <article id="large_page_el2">
                 <MessageLargePage />

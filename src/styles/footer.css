@@ -1,0 +1,12 @@
+#article_footer_large_page {
+    width: calc(50% - 150px);
+    margin-left: 75px;
+    margin-right: 75px;
+    color: #6400E3;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 8px;
+}
