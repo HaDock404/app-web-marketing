@@ -1,10 +1,10 @@
 #article_message_large_page {
-    width: calc(100% - 60px);
+    width: calc(100% - 300px);
     padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
     color: white;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     font-weight: 800;
     line-height: 1.5;
