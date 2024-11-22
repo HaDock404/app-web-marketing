@@ -1,5 +1,7 @@
 function OffersLargePage() {
-    return
+    return (
+        <div>Large page</div>
+    )
 }
 
 export default OffersLargePage

@@ -14,7 +14,7 @@ function ProductsLargePage() {
                 intro="Nous créons votre présence sur le web afin que vos clients vous trouvent le plus facilement."
                 price="498€"
                 button="Sélectionner WebEssential"
-                link='/'
+                link='/nos-offres'
                 info_01="Site web de votre activité"
                 info_02="SEO/référencement Google"
                 info_03=""
@@ -29,7 +29,7 @@ function ProductsLargePage() {
                 intro="Présence sur le web + amélioration de votre image de marque avec commentaire et notes."
                 price="895€"
                 button="Sélectionner WebInfluence"
-                link='/'
+                link='/nos-offres'
                 info_01="Site web de votre activité"
                 info_02="SEO/référencement Google"
                 info_03="Commentaires et notes positives"

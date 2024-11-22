@@ -1,4 +1,5 @@
 import '../styles/intro_large_page.css'
+import { Link } from 'react-router-dom'
 
 function IntroLargePage() {
     return (
@@ -9,9 +10,9 @@ function IntroLargePage() {
             <p id='intro_large_page_p'>
                 Ne loupez plus aucune opportunitée grâce à notre méthode marketing adapté à votre secteur d’activité.
             </p>
-            <button id='intro_large_page_button'>
+            <Link to="/nos-offres" id='intro_large_page_button'>
                 Découvrir
-            </button>
+            </Link>
         </article>
     )
 }

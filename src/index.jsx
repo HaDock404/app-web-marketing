@@ -12,7 +12,7 @@ import GlobalStyle from './styles/createGlobalStyle.jsx'
 import ScrollToTop from "./styles/ScrollToTop";
 
 import HomePage from './pages/HomePage';
-
+import OffersPage from './pages/OffersPage'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +21,7 @@ root.render(
     <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />}/>
+          <Route path="/nos-offres" element={<OffersPage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
