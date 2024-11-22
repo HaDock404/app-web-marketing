@@ -5,7 +5,7 @@ import ImageLargePage from "../components/ImageLargePage"
 import ProductsLargePage from "../components/ProductsLargePage"
 import FooterLargePage from "../components/FooterLargePage"
 
-function LargePage() {
+function HomeLargePage() {
     return (
         <section className="page_section">
             <article id="large_page_el1">
@@ -22,4 +22,4 @@ function LargePage() {
     )
 }
 
-export default LargePage
+export default HomeLargePage
