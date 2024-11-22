@@ -20,7 +20,7 @@ function OffersPage() {
     }, []);
 
     return (
-        <div>{isLargeScreen ? <OffersLargePage /> : <OffersSmallPage />}</div>
+        <>{isLargeScreen ? <OffersLargePage /> : <OffersSmallPage />}</>
     )
 }
 

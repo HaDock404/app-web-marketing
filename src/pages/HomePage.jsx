@@ -21,7 +21,7 @@ function HomePage() {
     }, []);
 
     return (
-        <div>{isLargeScreen ? <HomeLargePage /> : <HomeSmallPage />}</div>
+        <>{isLargeScreen ? <HomeLargePage /> : <HomeSmallPage />}</>
     )
 }
 

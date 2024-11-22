@@ -1,6 +1,10 @@
+import HeaderOffersLargePage from '../components/HeaderOffersLargePage'
+
 function OffersLargePage() {
     return (
-        <div>Large page</div>
+        <>
+            <HeaderOffersLargePage />
+        </>
     )
 }
 
