@@ -1,6 +1,7 @@
 import HeaderLargePage from "../components/HeaderLargePage"
 import IntroLargePage from "../components/IntroLargePage"
 import MessageLargePage from "../components/MessageLargePage"
+import ImageLargePage from "../components/ImageLargePage"
 
 function LargePage() {
     return (
@@ -11,6 +12,7 @@ function LargePage() {
             </article>
             <article id="large_page_el2">
                 <MessageLargePage />
+                <ImageLargePage />
             </article>
         </section>
     )

@@ -1,0 +1,16 @@
+#article_image_large_page {
+    width: calc(100% - 60px);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%;
+  max-height: 100%;
+  object-fit: contain
+}
