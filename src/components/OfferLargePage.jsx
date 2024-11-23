@@ -1,16 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../styles/offer_large_page.css'
+import IconStar from './IconStar'
 
-function OfferLargePage({border="solid 2px #D9D9D9", id='left', title='WebEssential', intro="Présence sur le web + amélioration de votre image de marque avec commentaire et notes.", price="895€",link="/nos-offres", button="Sélectionner WebInfluence", info_01="Site web de votre activité", info_02="SEO/référencement Google", info_03="", style1="", display="", greatings="Recommandé", infos = [
-    { text: "info_02", style: "grey" },
-    { text: "info_01", style: null },
-    { text: "info_02", style: "grey" },
-    { text: "info_03", style: null },
-    { text: "info_02", style: "grey" },
-    { text: "info_01", style: null },
-    { text: "info_02", style: "grey" },
-    { text: "info_03", style: null },
-  ]}) {
+function OfferLargePage({border, id, title, intro, price,link, button, style1, display, greatings, infos}) {
     return (
         <article className='article_offer_large_page' style={{border: border}} id={id}>
             <article className='offer_large_page_box'>
@@ -30,7 +22,7 @@ function OfferLargePage({border="solid 2px #D9D9D9", id='left', title='WebEssent
                 
             </article>
             <div className='offer_large_page_mask'></div>
-            <div className='article_offer_large_progress' style={{display: display}}>🙈 {greatings}</div>
+            <div className='article_offer_large_progress' style={{display: display}}><IconStar/> {greatings}</div>
         </article>
     )
 }

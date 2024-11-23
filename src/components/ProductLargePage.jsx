@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../styles/products_large_page.css'
+import IconStar from './IconStar'
 
 function ProductLargePage({border, id, title, intro, price,link, button, info_01, info_02, info_03, info_04, style1, info_05, display, greatings}) {
     return (
@@ -11,7 +12,7 @@ function ProductLargePage({border, id, title, intro, price,link, button, info_01
             <div className='article_product_large_page_product info-grey'>{info_01}</div>
             <div className='article_product_large_page_product'>{info_02}</div>
             <div className='article_product_large_page_product info-grey' style={{backgroundColor: style1}}>{info_03}</div>
-            <div className='article_product_large_progress' style={{display: display}}>🙈 {greatings}</div>
+            <div className='article_product_large_progress' style={{display: display}}><IconStar/> {greatings}</div>
         </article>
     )
 }
