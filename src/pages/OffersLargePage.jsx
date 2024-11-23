@@ -1,13 +1,13 @@
 import HeaderOffersLargePage from '../components/HeaderOffersLargePage'
 import IntroOffersLargePage from '../components/IntroOffersLargePage'
-import OfferLargePage from '../components/OfferLargePage'
+import AllOffersLargePage from '../components/AllOffersLargePage'
 
 function OffersLargePage() {
     return (
         <>
             <HeaderOffersLargePage />
             <IntroOffersLargePage />
-            <OfferLargePage />
+            <AllOffersLargePage />
         </>
     )
 }
