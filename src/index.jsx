@@ -13,6 +13,7 @@ import ScrollToTop from "./styles/ScrollToTop";
 
 import HomePage from './pages/HomePage';
 import OffersPage from './pages/OffersPage'
+import WebEssentialPage from './pages/WebEssential/WebEssentialPage.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Routes>
           <Route path="/" element={<HomePage />}/>
           <Route path="/nos-offres" element={<OffersPage />}/>
+          <Route path="/web-essential" element={<WebEssentialPage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,

@@ -11,7 +11,7 @@ function AllOffersLargePage() {
                 intro="Nous créons votre présence sur le web afin que vos clients vous trouvent le plus facilement."
                 price="498€"
                 button="Sélectionner WebEssential"
-                link="/nos-offres"
+                link="/web-essential"
                 greatings=""
                 infos={[
                     { text: "Prise de contact avec nos experts", style: "grey" },
