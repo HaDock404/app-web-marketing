@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 function HeaderLargePage() {
     return (
         <header id='header'>
-            <h1 id='header_h1'>
+            <Link to='/' id='header_h1'>
                 Services Marketing
                 <span id='header_h1_span'>.fr</span>
-            </h1>
+            </Link>
 
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
