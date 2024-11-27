@@ -1,0 +1,24 @@
+.section_large_page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#web_essential_small_page_el1 {
+    width: 100%;
+    height: 100%;
+    background-color: #6400E3;
+}
+
+#web_essential_large_page_el1 {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+#web_essential_large_page_el2 {
+    width: 50%;
+    height: 100%;
+    background-color: #6400E3;
+}
