@@ -5,6 +5,8 @@ import OfferTitle from '../../components/OfferTitle'
 import OfferIntro from '../../components/OfferIntro'
 import OfferParagraph from '../../components/OfferParagraph'
 
+import MessageOfferLargePage from '../../components/MessageOfferLargePage'
+
 function WebEssentialLargePage() {
     return (
         <section className="section_large_page">
@@ -93,8 +95,14 @@ function WebEssentialLargePage() {
                         </ol>
                         `}
                 />
+                <footer style={{
+                    width: '100%',
+                    height: '50px',
+                    backgroundColor: 'white'
+                }}/>
             </article>
             <article className="web_essential_large_page_el2">
+                <MessageOfferLargePage />
             </article>
         </section>
     )
