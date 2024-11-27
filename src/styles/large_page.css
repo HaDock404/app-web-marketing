@@ -3,24 +3,33 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
+    overscroll-behavior: none;
+    touch-action: none;
+    overflow: hidden;
 }
 
-#web_essential_small_page_el1 {
+.web_essential_small_page_el1 {
     width: 100%;
     height: 100%;
     background-color: #6400E3;
 }
 
-#web_essential_large_page_el1 {
+.web_essential_large_page_el1 {
     width: 50%;
     height: 100%;
     background-color: white;
+    flex: 3;
+    overflow-y: auto; /* Le contenu interne défile */
+    overscroll-behavior: none;
 }
 
-#web_essential_large_page_el2 {
+.web_essential_large_page_el2 {
     width: 50%;
     height: 100%;
     background-color: #6400E3;
+    overflow-y: none;
+    overscroll-behavior: none;
+    position: relative;
 }
 
 .title_offer_page {

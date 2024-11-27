@@ -23,6 +23,7 @@ function HeaderLargePage() {
                 <li><Link class="menu__item" to="/">Aide - Contact</Link></li>
                 </ul>
             </div>
+            <div id='header_offers_mask'></div>
         </header>
 
     )
