@@ -15,52 +15,82 @@ function WebEssentialLargePage() {
                 <OfferParagraph
                     title='1. Présentation'
                     content={`
-                        Avec WebEssential c’est <span class="span_underline">simple</span> :
+                        Avec WebEssential, créer votre site internet n’a jamais été aussi <span class="span_underline">simple</span> :
                         <ul>
                             <li class="custom_bullet">
-                                Vous sélectionnez le template qui vous correspond le mieux. 
+                                Choisissez le template qui correspond le mieux à votre activité. 
                             </li>
                             <li class="custom_bullet">
-                                Vous nous contactez en nous donnant les informations qui apparaitront sur votre site
+                                Contactez-nous en partageant les informations clés sur votre activité (coordonnées, prestations, horaires, etc.).
                             </li>
                             <li class="custom_bullet">
-                                En <span class="span_underline">48h</span> votre site est en ligne et vos <span class="span_underline">clients</span> commencent à vous contacter
+                                En <span class="span_underline">48h</span> , votre site est en ligne et prêt à attirer vos futurs <span class="span_underline">clients.</span>
                             </li>
                         </ul>
                         `}
                 />
                 <OfferParagraph
-                    title='1. Présentation'
+                    title='2. Notre offre'
                     content={`
-                        Avec WebEssential c’est <span class="span_underline">simple</span> :
+                        <span class="span_underline">Simplifiez-vous la vie</span> en confiant la création de votre site à des professionnels du digital. Nous mettons tout en œuvre pour que vous soyez <span class="span_underline">visible</span> et <span class="span_underline">attractif</span> pour vos clients.
+                        <br/><br/>
+                        Ce que comprend notre service :
                         <ul>
                             <li class="custom_bullet">
-                                Vous sélectionnez le template qui vous correspond le mieux. 
+                                <span class="span_underline">Un site clé en main</span> : Un site internet moderne, clair et optimisé pour mettre en avant vos prestations.
                             </li>
                             <li class="custom_bullet">
-                                Vous nous contactez en nous donnant les informations qui apparaitront sur votre site
+                                <span class="span_underline">Design professionnel et personnalisé</span> : Chaque template est conçu pour s’adapter à votre activité (plombier, électricien, restaurateur, etc.).
                             </li>
                             <li class="custom_bullet">
-                                En <span class="span_underline">48h</span> votre site est en ligne et vos <span class="span_underline">clients</span> commencent à vous contacter
+                                <span class="span_underline">Adaptation mobile et tablette</span> : Votre site sera parfaitement lisible sur tous les appareils, garantissant une expérience utilisateur optimale.
+                            </li>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Optimisation pour le référencement local (SEO)</span> : Vos clients vous trouveront facilement sur Google.
+                            </li>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Hébergement et maintenance</span> : Nous nous occupons de tout pour que votre site reste rapide et sécurisé.
+                            </li>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Support client</span> : Besoin d’un ajustement ou d’une modification ? Notre équipe est là pour vous accompagner.
+
                             </li>
                         </ul>
                         `}
                 />
                 <OfferParagraph
-                    title='1. Présentation'
+                    title='3. Pourquoi choisir WebEssentiel ?'
                     content={`
-                        Avec WebEssential c’est <span class="span_underline">simple</span> :
                         <ul>
                             <li class="custom_bullet">
-                                Vous sélectionnez le template qui vous correspond le mieux. 
+                                <span class="span_underline">Rapidité</span> : Votre site est prêt en 48 heures.
                             </li>
                             <li class="custom_bullet">
-                                Vous nous contactez en nous donnant les informations qui apparaitront sur votre site
+                                <span class="span_underline">Simplicité</span> : Pas besoin de connaissances techniques.
                             </li>
                             <li class="custom_bullet">
-                                En <span class="span_underline">48h</span> votre site est en ligne et vos <span class="span_underline">clients</span> commencent à vous contacter
+                                <span class="span_underline">Efficacité</span> : Un site qui attire et convertit vos visiteurs en clients.
+                            </li>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Prix attractif</span> : Une solution abordable, pensée pour les artisans.
                             </li>
                         </ul>
+                        `}
+                />
+                <OfferParagraph
+                    title='4. Comment ça fonctionne ?'
+                    content={`
+                        <ol>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Sélectionnez votre template</span> : Découvrez nos modèles spécialement conçus pour les artisans.
+                            </li>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Fournissez vos informations</span> : Remplissez un formulaire simple avec les détails de votre activité.
+                            </li>
+                            <li class="custom_bullet">
+                                <span class="span_underline">Validation et mise en ligne</span> : Nous créons votre site et vous le présentons avant publication.
+                            </li>
+                        </ol>
                         `}
                 />
             </article>
