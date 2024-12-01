@@ -12,11 +12,22 @@ import screen01 from '../../assets/screen_01.png'
 import screen02 from '../../assets/screen_02.png'
 import screen03 from '../../assets/screen_03.png'
 
-const images = [
-    screen01,
-    screen02,
-    screen03
-    
+const images= [
+    {
+        image: screen01,
+        title: "couleurRed",
+        description: "Un écran rouge parfait pour un site d'exception et de qualité."
+    },
+    {
+        image: screen02,
+        title: "couleurJaune",
+        description: "Jaune comme la couleur du soleil, admirez le plus beau site pour votre entreprise."
+    },
+    {
+        image: screen03,
+        title: "couleurVert",
+        description: "Un site vert comme la couleur de l'argent, qui affluera par millier une fois que vous aurez une site."
+    }
 ];
 
 function WebEssentialLargePage() {

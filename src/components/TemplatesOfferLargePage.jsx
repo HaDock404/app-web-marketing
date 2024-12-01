@@ -20,8 +20,8 @@ function TemplatesOfferLargePage({ images }) {
         <article className='templates_offer_large_page'>
             <div className="carousel">
                 <img
-                    src={images[currentIndex]}
-                    alt={`Image ${currentIndex + 1}`}
+                    src={images[currentIndex].image}
+                    alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                     className="carousel-image"
                 />
                 <div className="carousel-controls">
@@ -35,7 +35,7 @@ function TemplatesOfferLargePage({ images }) {
                     >
                     {images.map((image, index) => (
                         <option key={index} value={index}>
-                        Image {index + 1}
+                        {image.title}
                         </option>
                     ))}
                     </select>
@@ -44,6 +44,7 @@ function TemplatesOfferLargePage({ images }) {
                     </button>
                 </div>
             </div>
+            <div className='templates_offer_large_page_description'>{images[currentIndex].description}</div>
         </article>
     )
 }
