@@ -8,22 +8,14 @@ import OfferParagraph from '../../components/OfferParagraph'
 import MessageOfferLargePage from '../../components/MessageOfferLargePage'
 import TemplatesOfferLargePage from '../../components/TemplatesOfferLargePage'
 
-import test1 from '../../assets/test1.png'
-import test2 from '../../assets/test2.png'
-import test3 from '../../assets/test3.png'
-import test4 from '../../assets/test4.png'
-import test5 from '../../assets/test5.png'
-import test6 from '../../assets/test6.png'
-import test7 from '../../assets/test7.png'
+import screen01 from '../../assets/screen_01.png'
+import screen02 from '../../assets/screen_02.png'
+import screen03 from '../../assets/screen_03.png'
 
 const images = [
-    test1,
-    test2,
-    test3,
-    test4,
-    test5,
-    test6,
-    test7,
+    screen01,
+    screen02,
+    screen03
     
 ];
 

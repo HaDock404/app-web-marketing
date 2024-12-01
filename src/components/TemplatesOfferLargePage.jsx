@@ -26,7 +26,7 @@ function TemplatesOfferLargePage({ images }) {
                 />
                 <div className="carousel-controls">
                     <button onClick={handlePrevious} className="carousel-button">
-                    Image précédente
+                    &lt; Image précédente
                     </button>
                     <select
                     onChange={handleSelect}
@@ -40,7 +40,7 @@ function TemplatesOfferLargePage({ images }) {
                     ))}
                     </select>
                     <button onClick={handleNext} className="carousel-button">
-                    Image suivante
+                    Image suivante &gt;
                     </button>
                 </div>
             </div>
