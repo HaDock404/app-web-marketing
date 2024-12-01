@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/large_page.css'
+import Computer from './Computer';
 
 function TemplatesOfferLargePage({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,14 +20,14 @@ function TemplatesOfferLargePage({ images }) {
     return (
         <article className='templates_offer_large_page'>
             <div className="templates_offer_large_page_carousel">
-                <img
-                    src={images[currentIndex].image}
+                <Computer 
+                    image={images[currentIndex].image}
                     alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
-                    className="templates_offer_large_page_carousel-image"
+                
                 />
                 <div className="templates_offer_large_page_carousel-controls">
                     <button onClick={handlePrevious} className="templates_offer_large_page_carousel-button">
-                    &lt; Image précédente
+                    &lt; Précédent
                     </button>
                     <select
                     onChange={handleSelect}
@@ -40,7 +41,7 @@ function TemplatesOfferLargePage({ images }) {
                     ))}
                     </select>
                     <button onClick={handleNext} className="templates_offer_large_page_carousel-button">
-                    Image suivante &gt;
+                    Suivant &gt;
                     </button>
                 </div>
             </div>

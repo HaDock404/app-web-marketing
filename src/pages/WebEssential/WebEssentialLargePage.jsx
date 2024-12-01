@@ -8,26 +8,44 @@ import OfferParagraph from '../../components/OfferParagraph'
 import MessageOfferLargePage from '../../components/MessageOfferLargePage'
 import TemplatesOfferLargePage from '../../components/TemplatesOfferLargePage'
 
-import screen01 from '../../assets/screen_01.png'
-import screen02 from '../../assets/screen_02.png'
-import screen03 from '../../assets/screen_03.png'
+import screen01 from '../../assets/screen01.png'
+import screen02 from '../../assets/screen02.png'
+import screen03 from '../../assets/screen03.png'
+import screen04 from '../../assets/screen04.png'
+import screen05 from '../../assets/screen05.png'
+import screen06 from '../../assets/screen06.png'
 
 const images= [
     {
         image: screen01,
-        title: "couleurRed",
-        description: "Un écran rouge parfait pour un site d'exception et de qualité."
+        title: "Adventure",
+        description: "Un template de qualité pour votre activité."
     },
     {
         image: screen02,
-        title: "couleurJaune",
-        description: "Jaune comme la couleur du soleil, admirez le plus beau site pour votre entreprise."
+        title: "Emotion",
+        description: "Réhaussez le niveau avec un site adapté à vos identités."
     },
     {
         image: screen03,
-        title: "couleurVert",
-        description: "Un site vert comme la couleur de l'argent, qui affluera par millier une fois que vous aurez une site."
-    }
+        title: "Successful",
+        description: "Un site qui réalisera de nombreuses conversion et de client satisfait."
+    },
+    {
+        image: screen04,
+        title: "Desired",
+        description: "Un site pour les activités proche de l'humain et qui apporte une touche de professionnalisme."
+    },
+    {
+        image: screen05,
+        title: "Masterclass",
+        description: "Le meilleur moyen de vous démarquer de vos concurents en vous présentant de la meilleures des manières."
+    },
+    {
+        image: screen06,
+        title: "KilleApp",
+        description: "Un site pour vous présentez facilement et simplement avec les informations adaptées à votre clientèle."
+    },
 ];
 
 function WebEssentialLargePage() {
