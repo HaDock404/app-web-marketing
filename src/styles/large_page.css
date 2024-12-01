@@ -115,27 +115,27 @@
 }
 
 
-.carousel {
+.templates_offer_large_page_carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
   }
   
-  .carousel-image {
+  .templates_offer_large_page_carousel-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
   }
   
-  .carousel-controls {
+  .templates_offer_large_page_carousel-controls {
     display: flex;
     align-items: center;
     gap: 10px;
   }
   
-  .carousel-button {
+  .templates_offer_large_page_carousel-button {
     width: 180px;
     padding: 10px 15px;
     font-size: 14px;
@@ -148,11 +148,11 @@
     font-weight: 100;
   }
 
-  .carousel-button:hover {
+  .templates_offer_large_page_carousel-button:hover {
     font-weight: 400;
   }
 
-  .carousel-dropdown {
+  .templates_offer_large_page_carousel-dropdown {
     padding: 8px;
     font-size: 14px;
     border-radius: 4px;

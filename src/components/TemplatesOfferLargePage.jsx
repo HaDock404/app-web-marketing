@@ -18,20 +18,20 @@ function TemplatesOfferLargePage({ images }) {
 
     return (
         <article className='templates_offer_large_page'>
-            <div className="carousel">
+            <div className="templates_offer_large_page_carousel">
                 <img
                     src={images[currentIndex].image}
                     alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
-                    className="carousel-image"
+                    className="templates_offer_large_page_carousel-image"
                 />
-                <div className="carousel-controls">
-                    <button onClick={handlePrevious} className="carousel-button">
+                <div className="templates_offer_large_page_carousel-controls">
+                    <button onClick={handlePrevious} className="templates_offer_large_page_carousel-button">
                     &lt; Image précédente
                     </button>
                     <select
                     onChange={handleSelect}
                     value={currentIndex}
-                    className="carousel-dropdown"
+                    className="templates_offer_large_page_carousel-dropdown"
                     >
                     {images.map((image, index) => (
                         <option key={index} value={index}>
@@ -39,7 +39,7 @@ function TemplatesOfferLargePage({ images }) {
                         </option>
                     ))}
                     </select>
-                    <button onClick={handleNext} className="carousel-button">
+                    <button onClick={handleNext} className="templates_offer_large_page_carousel-button">
                     Image suivante &gt;
                     </button>
                 </div>
