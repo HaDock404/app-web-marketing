@@ -1,5 +1,3 @@
-import screen01 from '../assets/screen_01.png'
-
 function Computer({image, alt}) {
     return (
         <svg className="svg_computer_screen" width="auto" height="100%" viewBox="0 0 734 461" fill="none" xmlns="http://www.w3.org/2000/svg">

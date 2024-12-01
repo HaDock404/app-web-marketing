@@ -8,12 +8,12 @@ import OfferParagraph from '../../components/OfferParagraph'
 import MessageOfferLargePage from '../../components/MessageOfferLargePage'
 import TemplatesOfferLargePage from '../../components/TemplatesOfferLargePage'
 
-import screen01 from '../../assets/screen01.png'
-import screen02 from '../../assets/screen02.png'
-import screen03 from '../../assets/screen03.png'
-import screen04 from '../../assets/screen04.png'
-import screen05 from '../../assets/screen05.png'
-import screen06 from '../../assets/screen06.png'
+import screen01 from '../../assets/page_test_01_00.png'
+import screen02 from '../../assets/page_test_02_00.png'
+import screen03 from '../../assets/page_test_03_00.png'
+import screen04 from '../../assets/page_test_04_00.png'
+import screen05 from '../../assets/page_test_05_00.png'
+import screen06 from '../../assets/page_test_06_00.png'
 
 const images= [
     {
@@ -45,7 +45,7 @@ const images= [
         image: screen06,
         title: "KilleApp",
         description: "Un site pour vous présentez facilement et simplement avec les informations adaptées à votre clientèle."
-    },
+    }
 ];
 
 function WebEssentialLargePage() {
