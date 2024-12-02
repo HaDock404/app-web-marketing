@@ -121,6 +121,7 @@
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    height: 450px;
   }
   
   .templates_offer_large_page_carousel-image {
@@ -134,6 +135,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
   }
   
   .templates_offer_large_page_carousel-button {
@@ -193,4 +195,20 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
+  }
+
+  .templates_offer_large_page_device-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .templates_offer_large_page_device-button.active {
+    background-color: #6400e3;
+    color: white;
+  }
+  
+  .templates_offer_large_page_device-button:hover {
+    opacity: 0.9;
   }

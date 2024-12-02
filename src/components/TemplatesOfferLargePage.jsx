@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/large_page.css'
 import Computer from './Computer';
 import ComputerIcon from './ComputerIcon'
+import Smartphone from './Smartphone'
 import SmartphoneIcon from './SmartphoneIcon'
 
 function TemplatesOfferLargePage({ images }) {
@@ -19,14 +20,27 @@ function TemplatesOfferLargePage({ images }) {
         setCurrentIndex(Number(event.target.value));
     };
 
+    const [selectedDevice, setSelectedDevice] = useState('computer');
+    const handleButtonClick = (device) => {
+        if (selectedDevice !== device) {
+            setSelectedDevice(device);
+          }
+     };
+
     return (
         <article className='templates_offer_large_page'>
             <div className="templates_offer_large_page_carousel">
-                <Computer 
+                {selectedDevice === 'computer' ? (
+                    <Computer
                     image={images[currentIndex].imageComputer}
                     alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
-                
                 />
+                ) : (
+                    <Smartphone
+                        image={images[currentIndex].imageSmartphone}
+                        alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
+                    />
+                )}
                 <div className="templates_offer_large_page_carousel-controls">
                     <button onClick={handlePrevious} className="templates_offer_large_page_carousel-button">
                     &lt; Précédent
@@ -49,12 +63,22 @@ function TemplatesOfferLargePage({ images }) {
 
 
 
-                <div className='templates_offer_large_page_device'>
-                    <button className='templates_offer_large_page_device-button'>
-                        <ComputerIcon color='#6400E3'/>
+                <div className="templates_offer_large_page_device">
+                    <button
+                        className={`templates_offer_large_page_device-button ${
+                        selectedDevice === 'computer' ? 'active' : ''
+                        }`}
+                        onClick={() => handleButtonClick('computer')}
+                    >
+                        <ComputerIcon color={selectedDevice === 'computer' ? '#FFFFFF' : '#6400E3'} />
                     </button>
-                    <button className='templates_offer_large_page_device-button'>
-                        < SmartphoneIcon color='#6400E3'/>
+                    <button
+                        className={`templates_offer_large_page_device-button ${
+                        selectedDevice === 'smartphone' ? 'active' : ''
+                        }`}
+                        onClick={() => handleButtonClick('smartphone')}
+                    >
+                        <SmartphoneIcon color={selectedDevice === 'smartphone' ? '#FFFFFF' : '#6400E3'} />
                     </button>
                 </div>
 
