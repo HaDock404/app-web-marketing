@@ -17,32 +17,32 @@ import screen06 from '../../assets/page_test_06_00.png'
 
 const images= [
     {
-        image: screen01,
+        imageComputer: screen01,
         title: "Adventure",
         description: "Un template de qualité pour votre activité."
     },
     {
-        image: screen02,
+        imageComputer: screen02,
         title: "Emotion",
         description: "Réhaussez le niveau avec un site adapté à vos identités."
     },
     {
-        image: screen03,
+        imageComputer: screen03,
         title: "Successful",
         description: "Un site qui réalisera de nombreuses conversion et de client satisfait."
     },
     {
-        image: screen04,
+        imageComputer: screen04,
         title: "Desired",
         description: "Un site pour les activités proche de l'humain et qui apporte une touche de professionnalisme."
     },
     {
-        image: screen05,
+        imageComputer: screen05,
         title: "Masterclass",
         description: "Le meilleur moyen de vous démarquer de vos concurents en vous présentant de la meilleures des manières."
     },
     {
-        image: screen06,
+        imageComputer: screen06,
         title: "KilleApp",
         description: "Un site pour vous présentez facilement et simplement avec les informations adaptées à votre clientèle."
     }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/large_page.css'
 import Computer from './Computer';
+import ComputerIcon from './ComputerIcon'
+import SmartphoneIcon from './SmartphoneIcon'
 
 function TemplatesOfferLargePage({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +23,7 @@ function TemplatesOfferLargePage({ images }) {
         <article className='templates_offer_large_page'>
             <div className="templates_offer_large_page_carousel">
                 <Computer 
-                    image={images[currentIndex].image}
+                    image={images[currentIndex].imageComputer}
                     alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                 
                 />
@@ -44,6 +46,20 @@ function TemplatesOfferLargePage({ images }) {
                     Suivant &gt;
                     </button>
                 </div>
+
+
+
+                <div className='templates_offer_large_page_device'>
+                    <button className='templates_offer_large_page_device-button'>
+                        <ComputerIcon color='#6400E3'/>
+                    </button>
+                    <button className='templates_offer_large_page_device-button'>
+                        < SmartphoneIcon color='#6400E3'/>
+                    </button>
+                </div>
+
+
+
             </div>
             <div className='templates_offer_large_page_description'>{images[currentIndex].description}</div>
         </article>
