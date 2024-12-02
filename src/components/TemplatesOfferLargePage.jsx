@@ -32,12 +32,12 @@ function TemplatesOfferLargePage({ images }) {
             <div className="templates_offer_large_page_carousel">
                 {selectedDevice === 'computer' ? (
                     <Computer
-                    image={images[currentIndex].imageComputer[3]}
+                    image={images[currentIndex].imageComputer[0]}
                     alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                 />
                 ) : (
                     <Smartphone
-                        image={images[currentIndex].imageSmartphone}
+                        image={images[currentIndex].imageSmartphone[3]}
                         alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                     />
                 )}

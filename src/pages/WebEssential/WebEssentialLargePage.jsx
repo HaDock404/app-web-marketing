@@ -39,41 +39,59 @@ import screen03y from '../../assets/pagey_test_03_00.png'
 import screen04y from '../../assets/pagey_test_04_00.png'
 import screen05y from '../../assets/pagey_test_05_00.png'
 import screen06y from '../../assets/pagey_test_06_00.png'
+import screen01y_01 from '../../assets/pagey_test_01_01.png'
+import screen02y_01 from '../../assets/pagey_test_02_01.png'
+import screen03y_01 from '../../assets/pagey_test_03_01.png'
+import screen04y_01 from '../../assets/pagey_test_04_01.png'
+import screen05y_01 from '../../assets/pagey_test_05_01.png'
+import screen06y_01 from '../../assets/pagey_test_06_01.png'
+import screen01y_02 from '../../assets/pagey_test_01_02.png'
+import screen02y_02 from '../../assets/pagey_test_02_02.png'
+import screen03y_02 from '../../assets/pagey_test_03_02.png'
+import screen04y_02 from '../../assets/pagey_test_04_02.png'
+import screen05y_02 from '../../assets/pagey_test_05_02.png'
+import screen06y_02 from '../../assets/pagey_test_06_02.png'
+import screen01y_03 from '../../assets/pagey_test_01_03.png'
+import screen02y_03 from '../../assets/pagey_test_02_03.png'
+import screen03y_03 from '../../assets/pagey_test_03_03.png'
+import screen04y_03 from '../../assets/pagey_test_04_03.png'
+import screen05y_03 from '../../assets/pagey_test_05_03.png'
+import screen06y_03 from '../../assets/pagey_test_06_03.png'
 
 const images= [
     {
         imageComputer: [screen01, screen01_01, screen01_02, screen01_03],
-        imageSmartphone: screen01y,
+        imageSmartphone: [screen01y, screen01y_01, screen01y_02, screen01y_03],
         title: "Adventure",
         description: "Un template de qualité pour votre activité."
     },
     {
         imageComputer: [screen02, screen02_01, screen02_02, screen02_03],
-        imageSmartphone: screen02y,
+        imageSmartphone: [screen02y, screen02y_01, screen02y_02, screen02y_03],
         title: "Emotion",
         description: "Réhaussez le niveau avec un site adapté à vos identités."
     },
     {
         imageComputer: [screen03, screen03_01, screen03_02, screen03_03],
-        imageSmartphone: screen03y,
+        imageSmartphone: [screen03y, screen03y_01, screen03y_02, screen03y_03],
         title: "Successful",
         description: "Un site qui réalisera de nombreuses conversion et de client satisfait."
     },
     {
         imageComputer: [screen04, screen04_01, screen04_02, screen04_03],
-        imageSmartphone: screen04y,
+        imageSmartphone: [screen04y, screen04y_01, screen04y_02, screen04y_03],
         title: "Desired",
         description: "Un site pour les activités proche de l'humain et qui apporte une touche de professionnalisme."
     },
     {
         imageComputer: [screen05, screen05_01, screen05_02, screen05_03],
-        imageSmartphone: screen05y,
+        imageSmartphone: [screen05y, screen05y_01, screen05y_02, screen05y_03],
         title: "Masterclass",
         description: "Le meilleur moyen de vous démarquer de vos concurents en vous présentant de la meilleures des manières."
     },
     {
         imageComputer: [screen06, screen06_01, screen06_02, screen06_03],
-        imageSmartphone: screen06y,
+        imageSmartphone: [screen06y, screen06y_01, screen06y_02, screen06y_03],
         title: "KilleApp",
         description: "Un site pour vous présentez facilement et simplement avec les informations adaptées à votre clientèle."
     }
