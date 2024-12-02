@@ -8,41 +8,53 @@ import OfferParagraph from '../../components/OfferParagraph'
 import MessageOfferLargePage from '../../components/MessageOfferLargePage'
 import TemplatesOfferLargePage from '../../components/TemplatesOfferLargePage'
 
-import screen01 from '../../assets/page_test_01_00.png'
-import screen02 from '../../assets/page_test_02_00.png'
-import screen03 from '../../assets/page_test_03_00.png'
-import screen04 from '../../assets/page_test_04_00.png'
-import screen05 from '../../assets/page_test_05_00.png'
-import screen06 from '../../assets/page_test_06_00.png'
+import screen01 from '../../assets/pagex_test_01_00.png'
+import screen02 from '../../assets/pagex_test_02_00.png'
+import screen03 from '../../assets/pagex_test_03_00.png'
+import screen04 from '../../assets/pagex_test_04_00.png'
+import screen05 from '../../assets/pagex_test_05_00.png'
+import screen06 from '../../assets/pagex_test_06_00.png'
+import screen01y from '../../assets/pagey_test_01_00.png'
+import screen02y from '../../assets/pagey_test_02_00.png'
+import screen03y from '../../assets/pagey_test_03_00.png'
+import screen04y from '../../assets/pagey_test_04_00.png'
+import screen05y from '../../assets/pagey_test_05_00.png'
+import screen06y from '../../assets/pagey_test_06_00.png'
 
 const images= [
     {
         imageComputer: screen01,
+        imageSmartphone: screen01y,
         title: "Adventure",
         description: "Un template de qualité pour votre activité."
     },
     {
         imageComputer: screen02,
+        imageSmartphone: screen02y,
         title: "Emotion",
         description: "Réhaussez le niveau avec un site adapté à vos identités."
     },
     {
         imageComputer: screen03,
+        imageSmartphone: screen03y,
         title: "Successful",
         description: "Un site qui réalisera de nombreuses conversion et de client satisfait."
     },
     {
         imageComputer: screen04,
+        imageSmartphone: screen04y,
         title: "Desired",
         description: "Un site pour les activités proche de l'humain et qui apporte une touche de professionnalisme."
     },
     {
         imageComputer: screen05,
+        imageSmartphone: screen05y,
         title: "Masterclass",
         description: "Le meilleur moyen de vous démarquer de vos concurents en vous présentant de la meilleures des manières."
     },
     {
         imageComputer: screen06,
+        imageSmartphone: screen06y,
         title: "KilleApp",
         description: "Un site pour vous présentez facilement et simplement avec les informations adaptées à votre clientèle."
     }
