@@ -6,38 +6,46 @@ import Smartphone from './Smartphone'
 import SmartphoneIcon from './SmartphoneIcon'
 
 function TemplatesOfferLargePage({ images }) {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [ImageIndex, setImageIndex] = useState(0)
 
+    const [currentIndex, setCurrentIndex] = useState(0);
     const handlePrevious = () => {
         setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : images.length - 1));
+        setImageIndex(0)
     };
-
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex < images.length - 1 ? prevIndex + 1 : 0));
+        setImageIndex(0)
     };
-
     const handleSelect = (event) => {
         setCurrentIndex(Number(event.target.value));
+        setImageIndex(0)
     };
 
     const [selectedDevice, setSelectedDevice] = useState('computer');
     const handleButtonClick = (device) => {
         if (selectedDevice !== device) {
             setSelectedDevice(device);
+            setImageIndex(0)
           }
      };
+
+    
+    const handleImageIndex = (image_index) => {
+        setImageIndex(image_index)
+    };
 
     return (
         <article className='templates_offer_large_page'>
             <div className="templates_offer_large_page_carousel">
                 {selectedDevice === 'computer' ? (
                     <Computer
-                    image={images[currentIndex].imageComputer[0]}
+                    image={images[currentIndex].imageComputer[ImageIndex]}
                     alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                 />
                 ) : (
                     <Smartphone
-                        image={images[currentIndex].imageSmartphone[3]}
+                        image={images[currentIndex].imageSmartphone[ImageIndex]}
                         alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                     />
                 )}
@@ -60,9 +68,6 @@ function TemplatesOfferLargePage({ images }) {
                     Suivant &gt;
                     </button>
                 </div>
-
-
-
                 <div className="templates_offer_large_page_device">
                     <button
                         className={`templates_offer_large_page_device-button ${
@@ -80,6 +85,53 @@ function TemplatesOfferLargePage({ images }) {
                     >
                         <SmartphoneIcon color={selectedDevice === 'smartphone' ? '#FFFFFF' : '#6400E3'} />
                     </button>
+                </div>
+
+
+
+                <div className="templates_offer_large_page_multiple_page">
+                    
+          
+
+                    {selectedDevice === 'computer' ? (
+                        images[currentIndex].imageComputer.map((image, index) => (
+                            <button
+                            key={index}
+                            className={`templates_offer_large_page_multiple_page_box ${
+                                ImageIndex === index ? 'active' : ''
+                            }`}
+                            onClick={() => handleImageIndex(index)}
+                            style={{
+                                backgroundColor: ImageIndex === index ? '#6400E3' : 'white',
+                            }}
+                            >
+                                <img
+                                    className="templates_offer_large_page_multiple_page_box_image"
+                                    src={image}
+                                    alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
+                                />
+                            </button>
+                        ))
+                    ) : (
+                        images[currentIndex].imageSmartphone.map((image, index) => (
+                            <button
+                            key={index}
+                            className={`templates_offer_large_page_multiple_page_box ${
+                                ImageIndex === index ? 'active' : ''
+                            }`}
+                            onClick={() => handleImageIndex(index)}
+                            style={{
+                                backgroundColor: ImageIndex === index ? '#6400E3' : 'white',
+                            }}
+                            >
+                                <img
+                                    className="templates_offer_large_page_multiple_page_box_image"
+                                    src={image}
+                                    alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
+                                />
+                            </button>
+                        ))
+                    )}
                 </div>
 
 
