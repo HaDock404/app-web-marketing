@@ -11,7 +11,7 @@ function Computer({image, alt}) {
             <rect x="37.5" y="456.5" width="39" height="4" fill="url(#paint3_linear_107_4)"/>
             <rect x="658.5" y="456.5" width="39" height="4" fill="url(#paint4_linear_107_4)"/>
             <path d="M312.5 428.5H422.5L416.5 435.5H319.5L312.5 428.5Z" fill="url(#paint5_linear_107_4)"/>
-            <rect x="84.5" y="50.5" width="566" height="357" fill="lightgray"/>
+            <rect x="84.5" y="50.5" width="566" height="357" fill="black"/>
                 <image
                     href={image}
                     x="84.5"
