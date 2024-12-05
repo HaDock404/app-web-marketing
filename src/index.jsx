@@ -11,7 +11,7 @@ import './styles/normalize.css'
 import GlobalStyle from './styles/createGlobalStyle.jsx'
 import ScrollToTop from "./styles/ScrollToTop";
 
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import OffersPage from './pages/OffersPage'
 import WebEssentialPage from './pages/WebEssential/WebEssentialPage.jsx';
 

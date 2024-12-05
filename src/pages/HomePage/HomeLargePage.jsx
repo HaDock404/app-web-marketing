@@ -1,9 +1,9 @@
-import HeaderLargePage from "../components/HeaderLargePage"
-import IntroLargePage from "../components/IntroLargePage"
-import MessageLargePage from "../components/MessageLargePage"
-import ImageLargePage from "../components/ImageLargePage"
-import ProductsLargePage from "../components/ProductsLargePage"
-import FooterLargePage from "../components/FooterLargePage"
+import HeaderLargePage from "../../components/HeaderLargePage"
+import IntroLargePage from "../../components/IntroLargePage"
+import MessageLargePage from "../../components/MessageLargePage"
+import ImageLargePage from "../../components/ImageLargePage"
+import ProductsLargePage from "../../components/ProductsLargePage"
+import FooterLargePage from "../../components/FooterLargePage"
 
 function HomeLargePage() {
     return (
