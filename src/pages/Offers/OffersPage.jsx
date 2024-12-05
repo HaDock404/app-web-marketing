@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../styles/offerspage.css'
+import '../../styles/offerspage.css'
 
 import OffersLargePage from './OffersLargePage'
 import OffersSmallPage from './OffersSmallPage'

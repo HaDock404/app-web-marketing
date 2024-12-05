@@ -12,7 +12,7 @@ import GlobalStyle from './styles/createGlobalStyle.jsx'
 import ScrollToTop from "./styles/ScrollToTop";
 
 import HomePage from './pages/HomePage/HomePage';
-import OffersPage from './pages/OffersPage'
+import OffersPage from './pages/Offers/OffersPage'
 import WebEssentialPage from './pages/WebEssential/WebEssentialPage.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
