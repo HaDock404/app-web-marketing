@@ -10,7 +10,7 @@ const StyledGlobalStyle = createGlobalStyle`
         overscroll-behavior: none;
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
-        ont-style: normal;
+        font-style: normal;
     }    
 `
 

@@ -10,3 +10,10 @@
     left: 0;
     font-size: 8px;
 }
+
+@media screen and (max-height: 670px) {
+    #article_footer_large_page {
+        position: relative;
+        width: calc(100% - 150px);
+    }
+}
