@@ -1,5 +1,5 @@
 .page_section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -27,4 +27,12 @@
     display: flex;
     flex-direction: column;
     min-height: 670px;
+}
+
+@media screen and (max-width: 1200px) and (max-height: 670px) {
+    #large_page_el2 {
+        height: calc(100% - 65px);
+        padding-bottom: 65px;
+        background-color: #e30040;
+    }
 }

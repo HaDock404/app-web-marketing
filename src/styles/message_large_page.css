@@ -9,3 +9,11 @@
     font-weight: 800;
     line-height: 1.5;
 }
+
+@media screen and (max-width: 1170px) {
+    #article_message_large_page {
+        width: calc(100% - 200px);
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
