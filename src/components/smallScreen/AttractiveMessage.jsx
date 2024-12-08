@@ -45,7 +45,8 @@ function AttractiveMessage() {
                     Suivant
                 </button>
             </article>
-    </section>
+            <div className="lineTest"></div>
+        </section>
     )
 }
 

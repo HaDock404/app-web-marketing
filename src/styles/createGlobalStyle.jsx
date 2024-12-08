@@ -11,7 +11,10 @@ const StyledGlobalStyle = createGlobalStyle`
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-    }    
+    }
+    body {
+        position: relative;
+    }
 `
 
 function GlobalStyle() {

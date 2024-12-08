@@ -4,6 +4,16 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
+}
+
+
+.lineTest {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: red;
+    top: 640px;
 }
 
 .AttractiveMessage_article_button {
@@ -40,7 +50,7 @@
 
 .message1_title {
     color: white;
-    font-size: 35px;
+    font-size: 15px;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -52,7 +62,7 @@
 
 .message1_subtile {
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
     margin-left: 25px;
     margin-right: 25px;
