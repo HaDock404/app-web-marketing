@@ -3,7 +3,7 @@ function Smartphone({image, alt}) {
         <svg className="Smartphone" width="auto" height="100%" viewBox="0 0 219 450" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" width="217" height="450" rx="37" fill="#454545"/>
             <rect x="2" y="1" width="215" height="448" rx="36" fill="url(#paint0_linear_119_195)"/>
-            <rect x="6.5" y="6" width="206" height="438" rx="31.5" fill="#FD7171" stroke="black" stroke-width="5"/>
+            <rect x="6.5" y="6" width="206" height="438" rx="31.5" fill="#FD7171" stroke="black" strokeWidth="5"/>
             <path d="M9 37C9 20.9837 21.9837 8 38 8H181C197.016 8 210 20.9837 210 37V37H9V37Z" fill="#303030"/>
             <rect x="78" y="14" width="63" height="19" rx="9.5" fill="black"/>
             <circle cx="133" cy="24" r="3" fill="url(#paint1_linear_119_195)"/>
@@ -36,28 +36,28 @@ function Smartphone({image, alt}) {
             <path d="M192 22.5C192.131 22.5 192.261 22.5259 192.383 22.5761C192.504 22.6264 192.614 22.7 192.707 22.7929C192.8 22.8858 192.874 22.996 192.924 23.1173C192.974 23.2386 193 23.3687 193 23.5C193 23.6313 192.974 23.7614 192.924 23.8827C192.874 24.004 192.8 24.1142 192.707 24.2071C192.614 24.3 192.504 24.3736 192.383 24.4239C192.261 24.4741 192.131 24.5 192 24.5L192 23.5L192 22.5Z" fill="#636365"/>
             <defs>
             <linearGradient id="paint0_linear_119_195" x1="335" y1="0.999974" x2="-143" y2="435.5" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#9645D3"/>
-            <stop offset="1" stop-color="#461575"/>
+            <stop stopColor="#9645D3"/>
+            <stop offset="1" stopColor="#461575"/>
             </linearGradient>
             <linearGradient id="paint1_linear_119_195" x1="136" y1="22" x2="130" y2="26" gradientUnits="userSpaceOnUse">
             <stop/>
-            <stop offset="1" stop-color="#200059"/>
+            <stop offset="1" stopColor="#200059"/>
             </linearGradient>
             <linearGradient id="paint2_linear_119_195" x1="218" y1="173" x2="219" y2="173" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#461575"/>
-            <stop offset="1" stop-color="#6A30A2"/>
+            <stop stopColor="#461575"/>
+            <stop offset="1" stopColor="#6A30A2"/>
             </linearGradient>
             <linearGradient id="paint3_linear_119_195" x1="1" y1="217.321" x2="2" y2="217.321" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#461575"/>
-            <stop offset="1" stop-color="#6A30A2"/>
+            <stop stopColor="#461575"/>
+            <stop offset="1" stopColor="#6A30A2"/>
             </linearGradient>
             <linearGradient id="paint4_linear_119_195" x1="1" y1="173.321" x2="2" y2="173.321" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#461575"/>
-            <stop offset="1" stop-color="#6A30A2"/>
+            <stop stopColor="#461575"/>
+            <stop offset="1" stopColor="#6A30A2"/>
             </linearGradient>
             <linearGradient id="paint5_linear_119_195" x1="1" y1="116.679" x2="2" y2="116.679" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#461575"/>
-            <stop offset="1" stop-color="#6A30A2"/>
+            <stop stopColor="#461575"/>
+            <stop offset="1" stopColor="#6A30A2"/>
             </linearGradient>
             </defs>
         </svg>
