@@ -37,10 +37,10 @@ function AttractiveMessage() {
                     {pages[currentPage - 1]}
             </article>
             <article className='AttractiveMessage_article_button'>
-                <button className='AttractiveMessage_button_previous' onClick={handlePrevious} disabled={currentPage === 1}>
+                <button className='AttractiveMessage_button AttractiveMessage_button_previous' onClick={handlePrevious} disabled={currentPage === 1}>
                     Précédent
                 </button>
-                <button className='AttractiveMessage_button_next' onClick={handleNext}>{/*disabled={currentPage === pages.length}*/}
+                <button className='AttractiveMessage_button AttractiveMessage_button_next' onClick={handleNext}>{/*disabled={currentPage === pages.length}*/}
                     Suivant
                 </button>
             </article>

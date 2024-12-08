@@ -1,0 +1,33 @@
+.AttractiveMessage_section_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.AttractiveMessage_article_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.AttractiveMessage_button {
+    font-weight: 100;
+    font-size: 20px;
+    border: none;
+    background-color: #6400E3;
+    color: #ffff;
+    width: calc(50% - 50px);
+    height: 30px;
+    margin: 25px;
+
+}
+
+.AttractiveMessage_button_next {
+    background-color: #ffff;
+    border: none;
+    border-radius: 30px;
+    color: #6400E3;
+}
