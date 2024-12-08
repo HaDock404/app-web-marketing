@@ -15,14 +15,19 @@
 
 .AttractiveMessage_button {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     background-color: #6400E3;
     color: #ffff;
-    width: calc(50% - 50px);
-    height: 30px;
-    margin: 25px;
+    width: calc(50% - 70px);
+    height: 40px;
+    margin: 35px;
+    margin-top: 15px;
+}
 
+.AttractiveMessage_button_previous[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .AttractiveMessage_button_next {
@@ -30,4 +35,135 @@
     border: none;
     border-radius: 30px;
     color: #6400E3;
+}
+
+.message1_title {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.message1_subtile {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 100;
+}
+
+.message1_subtile_strong {
+    text-decoration: underline;
+    color: #F5606E;
+    font-weight: bold;
+}
+
+.message1_svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: calc(100% - 60px);
+    padding: 30px;
+}
+
+.arrow_animation_01 {
+    animation: arrow_animation1 0.7s linear 0.7s infinite;
+}
+
+@keyframes arrow_animation1 {
+    0%, 33%{
+        opacity: 1;
+    }
+    33.1%, 66% {
+        opacity: 0;
+    }
+    66.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.arrow_animation_03 {
+    animation: arrow_animation3 0.7s linear 0.7s infinite;
+}
+
+@keyframes arrow_animation3 {
+    0%, 33%{
+        opacity: 0;
+    }
+    33.1%, 66% {
+        opacity: 1;
+    }
+    66.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.arrow_animation_02 {
+    animation: arrow_animation2 0.7s linear 0.7s infinite;
+}
+
+@keyframes arrow_animation2 {
+    0%, 33%{
+        opacity: 0;
+    }
+    33.1%, 66% {
+        opacity: 0;
+    }
+    66.1%, 100% {
+        opacity: 1;
+    }
+}
+
+.arrow_animation_04 {
+    animation: arrow_animation4 0.9s linear 0.9s infinite;
+}
+
+@keyframes arrow_animation4 {
+    0%, 33%{
+        opacity: 1;
+    }
+    33.1%, 66% {
+        opacity: 0;
+    }
+    66.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.arrow_animation_06 {
+    animation: arrow_animation5 0.9s linear 0.9s infinite;
+}
+
+@keyframes arrow_animation5 {
+    0%, 33%{
+        opacity: 0;
+    }
+    33.1%, 66% {
+        opacity: 1;
+    }
+    66.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.arrow_animation_05 {
+    animation: arrow_animation6 0.9s linear 0.9s infinite;
+}
+
+@keyframes arrow_animation6 {
+    0%, 33%{
+        opacity: 0;
+    }
+    33.1%, 66% {
+        opacity: 0;
+    }
+    66.1%, 100% {
+        opacity: 1;
+    }
 }

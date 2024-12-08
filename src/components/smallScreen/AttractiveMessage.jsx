@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../styles/attractive_message.css'
 
-import Test1 from './Message1';
-import Test2 from './Message2';
-import Test3 from './Message3';
+import Message1 from './Message1';
+import Message2 from './Message2';
+import Message3 from './Message3';
 
 function AttractiveMessage() {
     const [currentPage, setCurrentPage] = useState(1);
     const navigate = useNavigate();
 
     const pages = [
-        <Test1 />,
-        <Test2 />,
-        <Test3 />,
-        <Test1 />,
+        <Message1 />,
+        <Message2 />,
+        <Message3 />,
+        <Message3 />,
+        <Message3 />,
     ];
     
     const handleNext = () => {
