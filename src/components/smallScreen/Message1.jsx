@@ -12,7 +12,7 @@ function Message1() {
             <article className='message1_svg'>
                 <SmartphoneMessage />
             </article>
-            
+            <div className="width_test"></div>
         </article>
     )
 }
