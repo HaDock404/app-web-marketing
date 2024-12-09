@@ -1,4 +1,7 @@
 import ComputerMessage1 from "./ComputerMessage1"
+import image from '../../assets/test.svg'
+
+const alt = "hey"
 
 function Message3() {
     return (
@@ -22,7 +25,7 @@ function Message3() {
                 </li>
            </ul>
             <article className='message3_svg'>
-                <ComputerMessage1 />
+                <ComputerMessage1  image={image} alt={alt}/>
             </article>
         </article>
     )

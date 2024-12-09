@@ -266,3 +266,35 @@
     text-decoration: underline;
     color: #F5606E;
 }
+
+.scrolling-container {
+    position: relative;
+    width: 566px; /* Largeur visible */
+    height: 357px; /* Hauteur visible */
+    overflow: hidden; /* Cache le débordement */
+}
+
+.scrolling-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Images empilées verticalement */
+    animation: scrollUp 10s linear infinite; /* Animation infinie */
+}
+
+.scrolling-image {
+    width: 100%; /* Remplit toute la largeur */
+    height: auto; /* Conserve les proportions */
+}
+
+/* Animation corrigée pour éliminer l'espace vide */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0); /* Début à la position initiale */
+    }
+    100% {
+        transform: translateY(-50%); /* Défiler jusqu'à la fin exacte de la deuxième image */
+    }
+}
