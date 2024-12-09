@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/app-web-marketing/static/css/main.c9081d01.css",
-    "main.js": "/app-web-marketing/static/js/main.b002e0a5.js",
+    "main.css": "/app-web-marketing/static/css/main.77a60ec6.css",
+    "main.js": "/app-web-marketing/static/js/main.4f60f00f.js",
     "static/js/453.4564d712.chunk.js": "/app-web-marketing/static/js/453.4564d712.chunk.js",
     "static/media/phone.svg": "/app-web-marketing/static/media/phone.b6276c9bc0e780f19ad1aaefc8d48fc2.svg",
     "static/media/template_computer_01_00.png": "/app-web-marketing/static/media/template_computer_01_00.27629d3ef86fc5928af1.png",
@@ -54,12 +54,12 @@
     "static/media/pagey_test_06_01.png": "/app-web-marketing/static/media/pagey_test_06_01.401110bf3808da0b95f5.png",
     "static/media/pagey_test_04_01.png": "/app-web-marketing/static/media/pagey_test_04_01.1fd3a410d677df9d05e2.png",
     "index.html": "/app-web-marketing/index.html",
-    "main.c9081d01.css.map": "/app-web-marketing/static/css/main.c9081d01.css.map",
-    "main.b002e0a5.js.map": "/app-web-marketing/static/js/main.b002e0a5.js.map",
+    "main.77a60ec6.css.map": "/app-web-marketing/static/css/main.77a60ec6.css.map",
+    "main.4f60f00f.js.map": "/app-web-marketing/static/js/main.4f60f00f.js.map",
     "453.4564d712.chunk.js.map": "/app-web-marketing/static/js/453.4564d712.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9081d01.css",
-    "static/js/main.b002e0a5.js"
+    "static/css/main.77a60ec6.css",
+    "static/js/main.4f60f00f.js"
   ]
 }
