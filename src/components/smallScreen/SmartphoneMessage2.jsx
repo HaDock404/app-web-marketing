@@ -1,6 +1,6 @@
 function Smartphone({image, alt}) {
     return (
-        <svg className="Smartphone" width="auto" height="100%" viewBox="0 0 219 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="Smartphone" style={{width:'auto', height:'100%'}} width="219" height="450%" viewBox="0 0 219 450" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" width="217" height="450" rx="37" fill="#454545"/>
             <rect x="2" y="1" width="215" height="448" rx="36" fill="url(#paint0_linear_119_195)"/>
             <rect x="6.5" y="6" width="206" height="438" rx="31.5" fill="#FD7171" stroke="black" strokeWidth="5"/>
