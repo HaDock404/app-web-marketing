@@ -4,7 +4,7 @@ import Smartphone2 from "./SmartphoneMessage2"
 import Template1 from "../../assets/template_smartphone_01_00.png"
 import Template2 from "../../assets/template_smartphone_02_00.png"
 
-function Test2() {
+function Message2() {
     const images = [
         { src: Template1, alt: 'Image 1' },
         { src: Template2, alt: 'Image 2' }
@@ -33,4 +33,4 @@ function Test2() {
     )
 }
 
-export default Test2
+export default Message2
