@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/app-web-marketing/static/css/main.1ac1f949.css",
-    "main.js": "/app-web-marketing/static/js/main.77d3bafe.js",
+    "main.css": "/app-web-marketing/static/css/main.c9081d01.css",
+    "main.js": "/app-web-marketing/static/js/main.b002e0a5.js",
     "static/js/453.4564d712.chunk.js": "/app-web-marketing/static/js/453.4564d712.chunk.js",
     "static/media/phone.svg": "/app-web-marketing/static/media/phone.b6276c9bc0e780f19ad1aaefc8d48fc2.svg",
     "static/media/template_computer_01_00.png": "/app-web-marketing/static/media/template_computer_01_00.27629d3ef86fc5928af1.png",
@@ -19,6 +19,7 @@
     "static/media/template_computer_02_02.png": "/app-web-marketing/static/media/template_computer_02_02.eee1f6f35396e0320ce7.png",
     "static/media/template_smartphone_01_02.png": "/app-web-marketing/static/media/template_smartphone_01_02.957f7b2e45d1c646ec43.png",
     "static/media/template_smartphone_01_01.png": "/app-web-marketing/static/media/template_smartphone_01_01.f5344314a4e24cccff5f.png",
+    "static/media/test.svg": "/app-web-marketing/static/media/test.09f502334c0c67059cd5c0df40c6bf1b.svg",
     "static/media/template_smartphone_02_02.png": "/app-web-marketing/static/media/template_smartphone_02_02.1039e892ce5ce7c0b9e8.png",
     "static/media/pagex_test_03_03.png": "/app-web-marketing/static/media/pagex_test_03_03.7ae4079a5aad37910131.png",
     "static/media/pagex_test_05_03.png": "/app-web-marketing/static/media/pagex_test_05_03.1c67e192957ca00d2430.png",
@@ -53,12 +54,12 @@
     "static/media/pagey_test_06_01.png": "/app-web-marketing/static/media/pagey_test_06_01.401110bf3808da0b95f5.png",
     "static/media/pagey_test_04_01.png": "/app-web-marketing/static/media/pagey_test_04_01.1fd3a410d677df9d05e2.png",
     "index.html": "/app-web-marketing/index.html",
-    "main.1ac1f949.css.map": "/app-web-marketing/static/css/main.1ac1f949.css.map",
-    "main.77d3bafe.js.map": "/app-web-marketing/static/js/main.77d3bafe.js.map",
+    "main.c9081d01.css.map": "/app-web-marketing/static/css/main.c9081d01.css.map",
+    "main.b002e0a5.js.map": "/app-web-marketing/static/js/main.b002e0a5.js.map",
     "453.4564d712.chunk.js.map": "/app-web-marketing/static/js/453.4564d712.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ac1f949.css",
-    "static/js/main.77d3bafe.js"
+    "static/css/main.c9081d01.css",
+    "static/js/main.b002e0a5.js"
   ]
 }
