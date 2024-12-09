@@ -131,6 +131,7 @@
 
 .arrow_animation_01 {
     animation: arrow_animation1 0.7s linear 0.7s infinite;
+    opacity: 1;
 }
 
 @keyframes arrow_animation1 {
@@ -147,6 +148,7 @@
 
 .arrow_animation_03 {
     animation: arrow_animation3 0.7s linear 0.7s infinite;
+    opacity: 0;
 }
 
 @keyframes arrow_animation3 {
@@ -163,6 +165,7 @@
 
 .arrow_animation_02 {
     animation: arrow_animation2 0.7s linear 0.7s infinite;
+    opacity: 0;
 }
 
 @keyframes arrow_animation2 {
@@ -179,6 +182,7 @@
 
 .arrow_animation_04 {
     animation: arrow_animation4 0.9s linear 0.9s infinite;
+    opacity: 1;
 }
 
 @keyframes arrow_animation4 {
@@ -195,6 +199,7 @@
 
 .arrow_animation_06 {
     animation: arrow_animation5 0.9s linear 0.9s infinite;
+    opacity: 0;
 }
 
 @keyframes arrow_animation5 {
@@ -211,6 +216,7 @@
 
 .arrow_animation_05 {
     animation: arrow_animation6 0.9s linear 0.9s infinite;
+    opacity: 0;
 }
 
 @keyframes arrow_animation6 {

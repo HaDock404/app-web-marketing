@@ -5,6 +5,9 @@ import '../../styles/attractive_message.css'
 import Message1 from './Message1';
 import Message2 from './Message2';
 import Message3 from './Message3';
+import Message4 from './Message4';
+import Message5 from './Message5';
+import Message6 from './Message6';
 
 function AttractiveMessage() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -14,8 +17,9 @@ function AttractiveMessage() {
         <Message1 />,
         <Message2 />,
         <Message3 />,
-        <Message3 />,
-        <Message3 />,
+        <Message4 />,
+        <Message5 />,
+        <Message6 />
     ];
     
     const handleNext = () => {
