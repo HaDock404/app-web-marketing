@@ -1,4 +1,8 @@
-import ComputerMessage1 from "./ComputerMessage1"
+import ComputerMessage2 from "./ComputerMessage2"
+import image1 from "../../assets/template_computer_01_00.png"
+import image2 from "../../assets/template_computer_01_01.png"
+import image3 from "../../assets/template_computer_01_02.png"
+import image4 from "../../assets/template_computer_01_03.png"
 
 function Message4() {
     return (
@@ -22,7 +26,13 @@ function Message4() {
                 </li>
            </ul>
             <article className='message3_svg'>
-                <ComputerMessage1/>
+                <ComputerMessage2 
+                    image1={image1}
+                    image2={image1}
+                    image3={image2}
+                    image4={image3}
+                    image5={image4} 
+                    alt="template_exemple"/>
             </article>
         </article>
     )
