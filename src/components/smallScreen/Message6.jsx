@@ -1,4 +1,4 @@
-import ComputerMessage1 from "./ComputerMessage1"
+import ComputerMessage4 from "./ComputerMessage4"
 
 function Message6() {
     return (
@@ -22,7 +22,7 @@ function Message6() {
                 </li>
            </ul>
             <article className='message3_svg'>
-                <ComputerMessage1/>
+                <ComputerMessage4/>
             </article>
         </article>
     )
