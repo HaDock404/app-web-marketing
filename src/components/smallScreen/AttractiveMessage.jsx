@@ -24,11 +24,8 @@ function AttractiveMessage() {
     ];
 
     const handlePageChange = (nextPage) => {
-        setIsTransitioning(true); // Activer la transition
-        setTimeout(() => {
-            setCurrentPage(nextPage); // Changer de page après un délai
-            setTimeout(() => setIsTransitioning(false), 500); // Masquer le chargement après un second délai
-        }, 500); // Délai avant le changement de page (animation)
+        setIsTransitioning(true);
+         setCurrentPage(nextPage)
     };
 
     const handleNext = () => {
@@ -44,6 +41,33 @@ function AttractiveMessage() {
             handlePageChange(currentPage - 1);
         }
     };
+
+
+    const handleImagesLoaded = () => {
+        setIsTransitioning(false); // Masquer la transition une fois les images chargées
+    };
+
+    useEffect(() => {
+        const images = document.querySelectorAll('.loading_img');
+        const minLoadTime = new Promise((resolve) => setTimeout(resolve, 500));
+        const imageLoadPromises = Array.from(images).map(
+            (img) =>
+                new Promise((resolve) => {
+                    if (img.complete) {
+                        resolve(); // L'image est déjà chargée
+                    } else {
+                        img.onload = resolve; // Résoudre la promesse à la fin du chargement
+                        img.onerror = resolve; // Résoudre même en cas d'erreur
+                    }
+                })
+        );
+
+        Promise.all([minLoadTime, ...imageLoadPromises]).then(() => {
+            setIsTransitioning(false); // Masquer la transition après le délai minimal et le chargement des images
+            handleImagesLoaded();
+        });
+
+    }, [currentPage])
 
     return (
         <section className='AttractiveMessage_section_page'>

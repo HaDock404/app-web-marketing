@@ -18,6 +18,7 @@ function ComputerMessage2({image1, image2, image3, image4, image5, alt}) {
             <rect x="16.5" y="223.5" width="40" height="40" rx="3.5" fill="white" stroke="white"/>
             <rect x="23" y="37" width="28" height="17" fill="#6400E3"/>
                 <image
+                    className="loading_img"
                     href={image1}
                     x="23" 
                     y="37" 
@@ -27,6 +28,7 @@ function ComputerMessage2({image1, image2, image3, image4, image5, alt}) {
                 />
             <rect x="23" y="103" width="28" height="17" fill="#6400E3"/>
                 <image
+                    className="loading_img"
                     href={image2}
                     x="23" 
                     y="103" 
@@ -36,6 +38,7 @@ function ComputerMessage2({image1, image2, image3, image4, image5, alt}) {
                 />
             <rect x="23" y="169" width="28" height="17" fill="#6400E3"/>
                 <image
+                    className="loading_img"
                     href={image3}
                     x="23" 
                     y="169" 
@@ -45,6 +48,7 @@ function ComputerMessage2({image1, image2, image3, image4, image5, alt}) {
                 />
             <rect x="23" y="235" width="28" height="17" fill="#6400E3"/>
                 <image
+                    className="loading_img"
                     href={image1}
                     x="23" 
                     y="235" 
@@ -69,6 +73,7 @@ function ComputerMessage2({image1, image2, image3, image4, image5, alt}) {
             <path d="M312 428H422L416 435H319L312 428Z" fill="url(#paint5_linear_184_469)"/>
             <rect x="84" y="50" width="566" height="357" fill="#6400E3"/>
                 <image
+                    className="loading_img"
                     href={image1}
                     x="84.5"
                     y="50.5"

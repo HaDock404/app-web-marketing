@@ -13,7 +13,7 @@ function Smartphone({image, alt}) {
             <rect x="1" y="107" width="1" height="19" transform="rotate(-180 1 107)" fill="url(#paint5_linear_119_195)"/>
             <path d="M9 37H210V412.5C210 428.516 197.016 441.5 181 441.5H38C21.9837 441.5 9 428.516 9 412.5V37Z" fill="#303030"/>
             <image
-                    className="template_smartphone"
+                    className="template_smartphone loading_img"
                     href={image}
                     x="9"
                     y="37"
