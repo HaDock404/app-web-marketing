@@ -25,7 +25,10 @@ function AttractiveMessage() {
 
     const handlePageChange = (nextPage) => {
         setIsTransitioning(true);
-         setCurrentPage(nextPage)
+        setTimeout(() => {
+            setCurrentPage(nextPage);
+        }, 500);
+        //setCurrentPage(nextPage)
     };
 
     const handleNext = () => {
