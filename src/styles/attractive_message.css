@@ -514,3 +514,7 @@
         opacity: 1;
     }
 }
+
+.message_hidden {
+    opacity: 0.3;
+}
