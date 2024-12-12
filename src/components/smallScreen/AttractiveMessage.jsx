@@ -34,7 +34,10 @@ function AttractiveMessage() {
         if (currentPage < pages.length) {
             handlePageChange(currentPage + 1);
         } else {
-            navigate('/nos-offres');
+            setIsTransitioning(true); // Active la page de chargement
+            setTimeout(() => {
+                navigate('/nos-offres'); // Navigue après un délai
+            }, 2000);
         }
     };
 
