@@ -284,12 +284,13 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    animation: fade-in 0.5s ease-out, fade-out 0.5s ease-in 0.5s;
+    animation: fade-inX 0.5s ease-out, fade-outX 0.5s ease-in 0.5s;
 }
 
 .loading-icon {
     color: white;
-    font-size: 1.5rem;
+    width: 80px;
+    height: 80px;
     text-align: center;
 }
 
@@ -308,5 +309,208 @@
     }
     to {
         opacity: 0;
+    }
+}
+
+.animation1 {
+    opacity: 0;
+    animation: test1 1s linear 1s infinite;
+}
+
+.animation2 {
+    opacity: 0;
+    animation: test2 1s linear 1s infinite;
+}
+
+.animation3 {
+    opacity: 0;
+    animation: test3 1s linear 1s infinite;
+}
+
+.animation4 {
+    opacity: 0;
+    animation: test4 1s linear 1s infinite;
+}
+
+.animation5 {
+    opacity: 0;
+    animation: test5 1s linear 1s infinite;
+}
+
+.animation6 {
+    opacity: 0;
+    animation: test6 1s linear 1s infinite;
+}
+
+.animation7 {
+    opacity: 0;
+    animation: test7 1s linear 1s infinite;
+}
+
+@keyframes test1 {
+    0%, 14% {
+        opacity: 1;
+    }
+    14.1%, 28% {
+        opacity: 0;
+    }
+    28.1%, 42% {
+        opacity: 0;
+    }
+    42.1%, 56% {
+        opacity: 0;
+    }
+    56.1%, 70% {
+        opacity: 0;
+    }
+    70.1%, 84% {
+        opacity: 0;
+    }
+    84.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes test2 {
+    0%, 14% {
+        opacity: 0;
+    }
+    14.1%, 28% {
+        opacity: 1;
+    }
+    28.1%, 42% {
+        opacity: 0;
+    }
+    42.1%, 56% {
+        opacity: 0;
+    }
+    56.1%, 70% {
+        opacity: 0;
+    }
+    70.1%, 84% {
+        opacity: 0;
+    }
+    84.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes test3 {
+    0%, 14% {
+        opacity: 0;
+    }
+    14.1%, 28% {
+        opacity: 0;
+    }
+    28.1%, 42% {
+        opacity: 1;
+    }
+    42.1%, 56% {
+        opacity: 0;
+    }
+    56.1%, 70% {
+        opacity: 0;
+    }
+    70.1%, 84% {
+        opacity: 0;
+    }
+    84.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes test4 {
+    0%, 14% {
+        opacity: 0;
+    }
+    14.1%, 28% {
+        opacity: 0;
+    }
+    28.1%, 42% {
+        opacity: 0;
+    }
+    42.1%, 56% {
+        opacity: 1;
+    }
+    56.1%, 70% {
+        opacity: 0;
+    }
+    70.1%, 84% {
+        opacity: 0;
+    }
+    84.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes test5 {
+    0%, 14% {
+        opacity: 0;
+    }
+    14.1%, 28% {
+        opacity: 0;
+    }
+    28.1%, 42% {
+        opacity: 0;
+    }
+    42.1%, 56% {
+        opacity: 0;
+    }
+    56.1%, 70% {
+        opacity: 1;
+    }
+    70.1%, 84% {
+        opacity: 0;
+    }
+    84.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes test6 {
+    0%, 14% {
+        opacity: 0;
+    }
+    14.1%, 28% {
+        opacity: 0;
+    }
+    28.1%, 42% {
+        opacity: 0;
+    }
+    42.1%, 56% {
+        opacity: 0;
+    }
+    56.1%, 70% {
+        opacity: 0;
+    }
+    70.1%, 84% {
+        opacity: 1;
+    }
+    84.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes test7 {
+    0%, 14% {
+        opacity: 0;
+    }
+    14.1%, 28% {
+        opacity: 0;
+    }
+    28.1%, 42% {
+        opacity: 0;
+    }
+    42.1%, 56% {
+        opacity: 0;
+    }
+    56.1%, 70% {
+        opacity: 0;
+    }
+    70.1%, 84% {
+        opacity: 0;
+    }
+    84.1%, 100% {
+        opacity: 1;
     }
 }

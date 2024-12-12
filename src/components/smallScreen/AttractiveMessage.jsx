@@ -9,6 +9,8 @@ import Message4 from './Message4';
 import Message5 from './Message5';
 import Message6 from './Message6';
 
+import LoadingAnimation from './LoadingAnimation';
+
 function AttractiveMessage() {
     const [currentPage, setCurrentPage] = useState(1);
     const [isTransitioning, setIsTransitioning] = useState(false);
@@ -25,10 +27,7 @@ function AttractiveMessage() {
 
     const handlePageChange = (nextPage) => {
         setIsTransitioning(true);
-        setTimeout(() => {
-            setCurrentPage(nextPage);
-        }, 500);
-        //setCurrentPage(nextPage)
+        setCurrentPage(nextPage)
     };
 
     const handleNext = () => {
@@ -52,7 +51,7 @@ function AttractiveMessage() {
 
     useEffect(() => {
         const images = document.querySelectorAll('.loading_img');
-        const minLoadTime = new Promise((resolve) => setTimeout(resolve, 500));
+        const minLoadTime = new Promise((resolve) => setTimeout(resolve, 800));
         const imageLoadPromises = Array.from(images).map(
             (img) =>
                 new Promise((resolve) => {
@@ -74,11 +73,15 @@ function AttractiveMessage() {
 
     return (
         <section className='AttractiveMessage_section_page'>
-            {isTransitioning && (
-                <div className="loading-screen">
-                    <div className="loading-icon">Chargement...</div>
-                </div>
-            )}
+
+            <div style={{
+                    opacity: isTransitioning ? 1 : 0, 
+                    zIndex: isTransitioning ? 9999 : -1
+                    }} 
+                className="loading-screen"
+            >
+                <div className="loading-icon"><LoadingAnimation />Chargement..</div>
+            </div>
             <article
                 className={`AttractiveMessage_article_message ${
                     isTransitioning ? 'hidden' : ''
