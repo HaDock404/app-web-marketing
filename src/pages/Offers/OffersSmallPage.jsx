@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import OfferLoading from "../../components/smallScreen/OfferLoading";
+import HeaderSmallScreen from "../../components/smallScreen/HeaderSmallScreen";
 
 function OffersSmallPage() {
     const [isLoading, setIsLoading] = useState(true);
@@ -13,9 +14,9 @@ function OffersSmallPage() {
             {isLoading ? (
                 <OfferLoading onComplete={handleLoadingComplete} />
             ) : (
-                <div className="main-page">
-                    <h1>Bienvenue sur la page principale</h1>
-                </div>
+                <>
+                    <HeaderSmallScreen />
+                </>
             )}
         </section>
     )
