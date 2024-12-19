@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function HeaderSmallScreen() {
     return (
-        <header id='header_offers'>
+        <header className='header_offers'>
             <Link to='/nos-offres' className='header_offers_h1_small'>
                 Services Marketing
                 <span className='header_offers_h1_span_small'>.fr</span>
@@ -23,6 +23,7 @@ function HeaderSmallScreen() {
                     <li><Link className="menu__item" to="/">Aide - Contact</Link></li>
                 </ul>
             </div>
+            <div className='header_mask_offers_small'></div>
          </header>
     )
 }
