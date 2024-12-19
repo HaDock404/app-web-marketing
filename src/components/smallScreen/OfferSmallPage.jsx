@@ -1,65 +1,49 @@
-import { Link } from 'react-router-dom'
-import { useState, useRef, useEffect } from 'react';
-import '../../styles/offer_small_page.css'
-import IconStar from '../IconStar'
+import { Link } from 'react-router-dom';
+import { useState, useRef } from 'react';
+import '../../styles/offer_small_page.css';
+import IconStar from './IconStar';
 
-function OfferSmallPage({border, id, title, intro, price,link, button, style1, display, greatings, infos}) {
-    const [isAtBottom, setIsAtBottom] = useState(false);
-    const scrollableRef = useRef(null);
+function OfferSmallPage({ border, id, title, intro, price, link, button, style1, display, infos }) {
+    const [isExpanded, setIsExpanded] = useState(false);
 
-    // Vérifie si l'utilisateur est en bas de l'élément défilable
-    const handleScroll = () => {
-        const element = scrollableRef.current;
-        if (element) {
-            // Tolérance pour éviter les erreurs d'arrondi
-            const tolerance = 5;
-            const isBottom =
-                Math.abs(element.scrollHeight - element.scrollTop - element.clientHeight) <= tolerance;
-            setIsAtBottom(isBottom);
-        }
+    const toggleExpand = () => {
+        setIsExpanded(!isExpanded);
     };
 
-    // Fait défiler en haut ou en bas selon l'état
-    const scrollTo = () => {
-        const element = scrollableRef.current;
-        if (element) {
-            element.scrollTo({
-                top: isAtBottom ? 0 : element.scrollHeight,
-                behavior: 'smooth',
-            });
-        }
-    };
-
-    useEffect(() => {
-        const element = scrollableRef.current;
-        if (element) {
-            element.addEventListener('scroll', handleScroll);
-            return () => element.removeEventListener('scroll', handleScroll);
-        }
-    }, []);
-    
     return (
-        <article className='article_offer_small_page' style={{border: border}} id={id}>
-            <article className='offer_small_page_box' ref={scrollableRef}>
-                <div className='article_offer_small_page_title'>{title}</div>
-                <div className='article_offer_small_page_intro'>{intro}</div>
-                <div className='article_offer_small_page_price'>{price}</div>
-                <Link to={link} className='article_offer_small_page_button'>{button}</Link>
+        <article
+            className={`article_offer_small_page ${isExpanded ? 'expanded' : ''}`}
+            style={{ border: border }}
+            id={id}
+        >
+            <article
+                className="offer_small_page_box"
+                style={{
+                    maxHeight: isExpanded ? 'none' : '360px', // Limite la hauteur si non étendu
+                    overflow: isExpanded ? 'visible' : 'hidden', // Gère le débordement
+                    transition: 'max-height 0.3s ease',
+                }}
+            >
+                <div className="article_offer_small_page_title">{title}</div>
+                <div className="article_offer_small_page_intro">{intro}</div>
+                <div className="article_offer_small_page_price">{price}</div>
+                <Link to={link} className="article_offer_small_page_button">{button}</Link>
                 <div>
                     {infos.map((info, index) => (
-                    <div
-                        key={index}
-                        className={`article_offer_small_page_product ${info.style ? 'info-grey' : ''}`}
-                        style={info.style ? { backgroundColor: style1 } : {}}
-                    >{info.text}</div>
+                        <div
+                            key={index}
+                            className={`article_offer_small_page_product ${info.style ? 'info-grey' : ''}`}
+                            style={info.style ? { backgroundColor: style1 } : {}}
+                        >
+                            {info.text}
+                        </div>
                     ))}
                 </div>
-                
             </article>
             <div className='offer_small_page_mask'></div>
-            <div className='article_offer_small_progress' style={{display: display}}><IconStar/> {greatings}</div>
+            <div className='article_offer_small_progress' style={{display: display}}><IconStar/></div>
             <button
-                onClick={scrollTo}
+                onClick={toggleExpand}
                 className="scroll-button"
                 style={{
                     position: 'absolute',
@@ -75,10 +59,10 @@ function OfferSmallPage({border, id, title, intro, price,link, button, style1, d
                     cursor: 'pointer',
                 }}
             >
-                {isAtBottom ? '↑' : '↓'}
+                {isExpanded ? '↑' : '↓'}
             </button>
         </article>
-    )
+    );
 }
 
-export default OfferSmallPage
+export default OfferSmallPage;
