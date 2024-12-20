@@ -13,7 +13,8 @@ function WebEssentialSmallPage() {
                 <OfferTitle title="WebEssential"/>
                 <OfferIntro text="L’offre parfaite pour débuter son activité sans prise de tête"/>
                 <OfferParagraph
-                    title='1. Présentation'
+                    id="1"
+                    title='1. Présentation ⌵'
                     content={`
                         Avec WebEssential, créer votre site internet n’a jamais été aussi <span class="span_underline_small_page">simple</span> :
                         <ul class="custome_ul_ol">
@@ -30,7 +31,8 @@ function WebEssentialSmallPage() {
                         `}
                 />
                 <OfferParagraph
-                    title='2. Notre offre'
+                    id="2"
+                    title='2. Notre offre ⌵'
                     content={`
                         <span class="span_underline_small_page">Simplifiez-vous la vie</span> en confiant la création de votre site à des professionnels du digital. Nous mettons tout en œuvre pour que vous soyez <span class="span_underline_small_page">visible</span> et <span class="span_underline_small_page">attractif</span> pour vos clients.
                         <br/><br/>
@@ -59,7 +61,8 @@ function WebEssentialSmallPage() {
                         `}
                 />
                 <OfferParagraph
-                    title='3. Pourquoi choisir WebEssentiel ?'
+                    id="3"
+                    title='3. Pourquoi choisir WebEssentiel ? ⌵'
                     content={`
                         <ul class="custome_ul_ol">
                             <li class="custom_bullet">
@@ -78,7 +81,8 @@ function WebEssentialSmallPage() {
                         `}
                 />
                 <OfferParagraph
-                    title='4. Comment ça fonctionne ?'
+                    id="4"
+                    title='4. Comment ça fonctionne ? ⌵'
                     content={`
                         <ol class="custome_ul_ol">
                             <li class="custom_bullet">
