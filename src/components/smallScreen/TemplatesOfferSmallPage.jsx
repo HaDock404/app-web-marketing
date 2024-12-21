@@ -127,11 +127,8 @@ function TemplatesOfferSmallPage({ images }) {
                         ))
                     )}
                 </div>
-
-
-
             </div>
-            <div className='templates_offer_large_page_description'>{images[currentIndex].description}</div>
+            <div className='templates_offer_small_page_description'>{images[currentIndex].description}</div>
         </article>
     )
 }
