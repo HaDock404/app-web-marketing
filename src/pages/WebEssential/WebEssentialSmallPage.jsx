@@ -4,6 +4,7 @@ import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
 import OfferTitle from '../../components/smallScreen/OfferTitle'
 import OfferIntro from '../../components/smallScreen/OfferIntro'
 import OfferParagraph from '../../components/smallScreen/OfferParagraph'
+import MessageOfferSmallPage from '../../components/smallScreen/MessageOfferSmallPage'
 
 function WebEssentialSmallPage() {
     return (
@@ -98,7 +99,9 @@ function WebEssentialSmallPage() {
                         `}
                 />
             </article>
-            
+            <article className="web_essential_small_page_el2">
+                <MessageOfferSmallPage/>
+            </article>
         </section>
     )
 }
