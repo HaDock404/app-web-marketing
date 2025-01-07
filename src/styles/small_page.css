@@ -254,6 +254,10 @@ input[type="checkbox"]:checked ~ .box-content {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
   
 .templates_offer_small_page_device-button.active {
