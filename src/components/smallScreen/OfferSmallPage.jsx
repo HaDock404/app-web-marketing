@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import '../../styles/offer_small_page.css';
 import IconStar from './IconStar';
 
@@ -44,13 +44,12 @@ function OfferSmallPage({ border, id, title, intro, price, link, button, style1,
             <div className='article_offer_small_progress' style={{display: display}}><IconStar/></div>
             <button
                 onClick={toggleExpand}
-                className="scroll-button"
+                className="article_offer_small_scroll-button"
                 style={{
                     position: 'absolute',
                     bottom: '15px',
                     right: '15px',
                     zIndex: 9,
-                    padding: '10px 15px',
                     backgroundColor: '#6400E3',
                     color: 'white',
                     border: 'none',
