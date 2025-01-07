@@ -127,7 +127,12 @@ function TemplatesOfferSmallPage({ images }) {
                         alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
                     />
                 )}
-                <div className="templates_offer_small_page_carousel-controls">
+                <div className={
+                    selectedDevice === 'computer'
+                    ? 'templates_offer_small_page_carousel-controls_computer'
+                    : 'templates_offer_small_page_carousel-controls'
+                }
+                >
                     <button onClick={handlePrevious} className="templates_offer_small_page_carousel-button">
                     &lt; Précédent
                     </button>
@@ -146,14 +151,6 @@ function TemplatesOfferSmallPage({ images }) {
                     Suivant &gt;
                     </button>
                 </div>
-                
-
-
-
-
-
-
-                
             </div>
             <div className='templates_offer_small_page_description'>{images[currentIndex].description}</div>
         </article>
