@@ -236,6 +236,17 @@ input[type="checkbox"]:checked ~ .box-content {
     justify-content: space-between;
 }
 
+.templates_offer_small_page_device_computer {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    top: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .templates_offer_small_page_device-button {
     width: 40px;
     height: 40px;
@@ -261,6 +272,19 @@ input[type="checkbox"]:checked ~ .box-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
+}
+
+.templates_offer_small_page_multiple_page_computer {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 80px;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 

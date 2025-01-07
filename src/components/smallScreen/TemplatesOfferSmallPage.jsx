@@ -68,7 +68,13 @@ function TemplatesOfferSmallPage({ images }) {
                     Suivant &gt;
                     </button>
                 </div>
-                <div className="templates_offer_small_page_device">
+                <div 
+                    className={
+                        selectedDevice === 'computer'
+                        ? 'templates_offer_small_page_device_computer'
+                        : 'templates_offer_small_page_device'
+                        }
+                >
                     <button
                         className={`templates_offer_small_page_device-button ${
                         selectedDevice === 'smartphone' ? 'active' : ''
@@ -87,7 +93,12 @@ function TemplatesOfferSmallPage({ images }) {
                     </button>
                     
                 </div>
-                <div className="templates_offer_small_page_multiple_page">
+                <div className={
+                        selectedDevice === 'computer'
+                        ? 'templates_offer_small_page_multiple_page_computer'
+                        : 'templates_offer_small_page_multiple_page'
+                        }
+                >
                     {selectedDevice === 'computer' ? (
                         images[currentIndex].imageComputer.map((image, index) => (
                             <button
@@ -111,7 +122,7 @@ function TemplatesOfferSmallPage({ images }) {
                         images[currentIndex].imageSmartphone.map((image, index) => (
                             <button
                             key={index}
-                            className={`templates_offer_large_page_multiple_page_box ${
+                            className={`templates_offer_small_page_multiple_page_box ${
                                 ImageIndex === index ? 'active' : ''
                             }`}
                             onClick={() => handleImageIndex(index)}
