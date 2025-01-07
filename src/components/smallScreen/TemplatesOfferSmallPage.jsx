@@ -22,7 +22,7 @@ function TemplatesOfferSmallPage({ images }) {
         setImageIndex(0)
     };
 
-    const [selectedDevice, setSelectedDevice] = useState('computer');
+    const [selectedDevice, setSelectedDevice] = useState('smartphone');
     const handleButtonClick = (device) => {
         if (selectedDevice !== device) {
             setSelectedDevice(device);
@@ -70,14 +70,6 @@ function TemplatesOfferSmallPage({ images }) {
                 </div>
                 <div className="templates_offer_small_page_device">
                     <button
-                        className={`templates_offer_large_page_device-button ${
-                        selectedDevice === 'computer' ? 'active' : ''
-                        }`}
-                        onClick={() => handleButtonClick('computer')}
-                    >
-                        <ComputerIcon color={selectedDevice === 'computer' ? '#FFFFFF' : '#6400E3'} />
-                    </button>
-                    <button
                         className={`templates_offer_small_page_device-button ${
                         selectedDevice === 'smartphone' ? 'active' : ''
                         }`}
@@ -85,6 +77,15 @@ function TemplatesOfferSmallPage({ images }) {
                     >
                         <SmartphoneIcon color={selectedDevice === 'smartphone' ? '#FFFFFF' : '#6400E3'} />
                     </button>
+                    <button
+                        className={`templates_offer_large_page_device-button ${
+                        selectedDevice === 'computer' ? 'active' : ''
+                        }`}
+                        onClick={() => handleButtonClick('computer')}
+                    >
+                        <ComputerIcon color={selectedDevice === 'computer' ? '#FFFFFF' : '#6400E3'} />
+                    </button>
+                    
                 </div>
                 <div className="templates_offer_small_page_multiple_page">
                     {selectedDevice === 'computer' ? (
