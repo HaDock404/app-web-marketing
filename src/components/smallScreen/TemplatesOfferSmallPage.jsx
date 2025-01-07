@@ -84,10 +84,11 @@ function TemplatesOfferSmallPage({ images }) {
                         <SmartphoneIcon color={selectedDevice === 'smartphone' ? '#FFFFFF' : '#6400E3'} />
                     </button>
                     <button
-                        className={`templates_offer_large_page_device-button ${
+                        className={`templates_offer_small_page_device-button ${
                         selectedDevice === 'computer' ? 'active' : ''
                         }`}
                         onClick={() => handleButtonClick('computer')}
+                        style={{padding:'0px'}}
                     >
                         <ComputerIcon color={selectedDevice === 'computer' ? '#FFFFFF' : '#6400E3'} />
                     </button>

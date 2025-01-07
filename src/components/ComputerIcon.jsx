@@ -1,6 +1,6 @@
 function ComputerIcon({color}) {
     return (
-        <svg className="computerIcon" width="auto" height="100%" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="computerIcon" width="auto" height="70%" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
         <   path fillRule="evenodd" clipRule="evenodd" d="M38.7815 284.968C39.7261 282.923 41.2016 281.232 43 280.028L43 49C43 43.4772 47.4772 39 53 39L369 39C374.523 39 379 43.4772 379 49L379 280.143C380.786 281.383 382.238 283.109 383.148 285.185L418.633 366.185C422.107 374.114 416.298 383 407.642 383L12.2612 383C3.50209 383 -2.30579 373.92 1.36717 365.968L38.7815 284.968ZM66 67L355 67L355 266L66 266L66 67ZM164 351C162.895 351 162 351.895 162 353V360C162 361.105 162.895 362 164 362H258C259.105 362 260 361.105 260 360V353C260 351.895 259.105 351 258 351H164Z" fill={color}/>
         </svg>
     )
