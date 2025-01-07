@@ -109,7 +109,13 @@ function TemplatesOfferSmallPage({ images }) {
                     ))
                 )}
             </div>
-            <div className="templates_offer_small_page_carousel">
+            <div 
+                className={
+                    selectedDevice === 'computer'
+                    ? 'templates_offer_small_page_carousel_computer'
+                    : 'templates_offer_small_page_carousel'
+                }
+            >
                 {selectedDevice === 'computer' ? (
                     <Computer
                     image={images[currentIndex].imageComputer[ImageIndex]}

@@ -177,6 +177,14 @@ input[type="checkbox"]:checked ~ .box-content {
     align-items: center;
     margin: 20px;
     height: 450px;
+}
+
+.templates_offer_small_page_carousel_computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    height: 450px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -229,7 +237,7 @@ input[type="checkbox"]:checked ~ .box-content {
 .templates_offer_small_page_device {
     position: absolute;
     width: 80px;
-    height: 100px;
+    height: 160px;
     right: 0px;
     top: 20px;
     display: flex;
