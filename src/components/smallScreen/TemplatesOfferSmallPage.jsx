@@ -151,8 +151,9 @@ function TemplatesOfferSmallPage({ images }) {
                     Suivant &gt;
                     </button>
                 </div>
+                <div className='templates_offer_small_page_description'>{images[currentIndex].description}</div>
             </div>
-            <div className='templates_offer_small_page_description'>{images[currentIndex].description}</div>
+            
         </article>
     )
 }
