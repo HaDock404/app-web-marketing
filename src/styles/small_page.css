@@ -1,5 +1,7 @@
 .section_small_page {
     position: relative;
+    padding-bottom: 50px;
+    background-color: #6400E3;
 }
 
 .web_essential_small_page_el1 {
@@ -353,9 +355,17 @@ input[type="checkbox"]:checked ~ .box-content {
 }
 
 .button_offer_small_page {
-    background-color: red;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    text-decoration: none;
+    background-color: #ffffff; /*#30FF71*/
+    color: #6400E3;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transform-origin: center bottom;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
