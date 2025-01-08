@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/app-web-marketing/static/css/main.587b4040.css",
+    "main.css": "/app-web-marketing/static/css/main.f99064e4.css",
     "main.js": "/app-web-marketing/static/js/main.40c8edaa.js",
     "static/js/453.4564d712.chunk.js": "/app-web-marketing/static/js/453.4564d712.chunk.js",
     "static/media/phone.svg": "/app-web-marketing/static/media/phone.b6276c9bc0e780f19ad1aaefc8d48fc2.svg",
@@ -54,12 +54,12 @@
     "static/media/pagey_test_06_01.png": "/app-web-marketing/static/media/pagey_test_06_01.401110bf3808da0b95f5.png",
     "static/media/pagey_test_04_01.png": "/app-web-marketing/static/media/pagey_test_04_01.1fd3a410d677df9d05e2.png",
     "index.html": "/app-web-marketing/index.html",
-    "main.587b4040.css.map": "/app-web-marketing/static/css/main.587b4040.css.map",
+    "main.f99064e4.css.map": "/app-web-marketing/static/css/main.f99064e4.css.map",
     "main.40c8edaa.js.map": "/app-web-marketing/static/js/main.40c8edaa.js.map",
     "453.4564d712.chunk.js.map": "/app-web-marketing/static/js/453.4564d712.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.587b4040.css",
+    "static/css/main.f99064e4.css",
     "static/js/main.40c8edaa.js"
   ]
 }
