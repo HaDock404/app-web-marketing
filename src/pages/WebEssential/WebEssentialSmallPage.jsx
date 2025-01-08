@@ -7,6 +7,7 @@ import OfferParagraph from '../../components/smallScreen/OfferParagraph'
 
 import MessageOfferSmallPage from '../../components/smallScreen/MessageOfferSmallPage'
 import TemplatesOfferSmallPage from '../../components/smallScreen/TemplatesOfferSmallPage'
+import ButtonOfferSmallPage from '../../components/smallScreen/ButtonOfferSmallPage'
 
 import screen01 from '../../assets/template_computer_01_00.png'
 import screen02 from '../../assets/template_computer_02_00.png'
@@ -194,6 +195,7 @@ function WebEssentialSmallPage() {
                 <MessageOfferSmallPage/>
                 <TemplatesOfferSmallPage images={images}/>
             </article>
+            <ButtonOfferSmallPage />
         </section>
     )
 }
