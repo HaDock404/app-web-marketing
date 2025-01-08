@@ -1,5 +1,7 @@
 function ConnexionSmallPage() {
-    return
+    return (
+        <div>Small Page</div>
+    )
 }
 
 export default ConnexionSmallPage

@@ -1,5 +1,7 @@
 function ConnexionLargePage() {
-    return
+    return (
+        <div>Large Page</div>
+    )
 }
 
 export default ConnexionLargePage
