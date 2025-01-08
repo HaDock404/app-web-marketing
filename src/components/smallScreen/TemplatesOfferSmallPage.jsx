@@ -84,7 +84,7 @@ function TemplatesOfferSmallPage({ images }) {
                             <img
                                 className="templates_offer_small_page_multiple_page_box_image"
                                 src={image}
-                                alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
+                                alt={`Image_${currentIndex + 1} - ${images[currentIndex].title}`}
                             />
                         </button>
                     ))
@@ -103,7 +103,7 @@ function TemplatesOfferSmallPage({ images }) {
                             <img
                                 className="templates_offer_small_page_multiple_page_box_image"
                                 src={image}
-                                alt={`Image ${currentIndex + 1} - ${images[currentIndex].title}`}
+                                alt={`Image_${currentIndex + 1} - ${images[currentIndex].title}`}
                             />
                         </button>
                     ))
@@ -151,9 +151,8 @@ function TemplatesOfferSmallPage({ images }) {
                     Suivant &gt;
                     </button>
                 </div>
-                <div className='templates_offer_small_page_description'>{images[currentIndex].description}</div>
             </div>
-            
+            <div className='templates_offer_small_page_description'>{images[currentIndex].description}</div>
         </article>
     )
 }
