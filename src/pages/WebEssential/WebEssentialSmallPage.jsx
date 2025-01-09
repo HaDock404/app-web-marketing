@@ -103,12 +103,12 @@ const images= [
 
 function WebEssentialSmallPage() {
 
-    const [currentIndex, setCurrentIndex] = useState("test");
+    const [dataIndex, setDataIndex] = useState(0);
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
         // Navigation vers la nouvelle page avec currentIndex
-        navigate("/connexion", { state: { currentIndex } });
+        navigate("/connexion", { state: { dataIndex } });
     };
 
     return (
@@ -205,7 +205,7 @@ function WebEssentialSmallPage() {
             </article>
             <article className="web_essential_small_page_el2">
                 <MessageOfferSmallPage/>
-                <TemplatesOfferSmallPage images={images}/>
+                <TemplatesOfferSmallPage images={images} setDataIndex={setDataIndex}/>
             </article>
             <ButtonOfferSmallPage onclick={handleButtonClick}/>
         </section>

@@ -5,7 +5,7 @@ import ComputerIcon from '../ComputerIcon'
 import Smartphone from '../Smartphone'
 import SmartphoneIcon from '../SmartphoneIcon'
 
-function TemplatesOfferSmallPage({ images }) {
+function TemplatesOfferSmallPage({ images, setDataIndex }) {
     const [ImageIndex, setImageIndex] = useState(0)
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,6 +16,7 @@ function TemplatesOfferSmallPage({ images }) {
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex < images.length - 1 ? prevIndex + 1 : 0));
         setImageIndex(0)
+        setDataIndex((prevIndex) => (prevIndex < images.length - 1 ? prevIndex + 1 : 0))
     };
     const handleSelect = (event) => {
         setCurrentIndex(Number(event.target.value));
