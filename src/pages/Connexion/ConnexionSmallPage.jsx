@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
 import ConnexionTitle from '../../components/smallScreen/ConnexionTitle'
+import CreateAccount from "../../components/smallScreen/CreateAccount";
 
 function ConnexionSmallPage() {
     const location = useLocation();
@@ -13,6 +14,9 @@ function ConnexionSmallPage() {
             <article className="connexion_small_page_el1">
                 <HeaderSmallScreen />
                 <ConnexionTitle title="Créez votre compte pour booster votre activité"/>
+            </article>
+            <article className="connexion_small_page_el2">
+                <CreateAccount />
             </article>
         </section>
     )
