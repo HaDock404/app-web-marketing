@@ -74,3 +74,64 @@
     padding: 5px;
     background-color: white;
 }
+
+.create_account_hr_box {
+    width: 100%;
+    color: #6400E3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.create_account_hr {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #6400E3;
+    border: none;
+    height: 1px;
+}
+
+.create_account_input_box {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.create_account_input {
+    width: calc(100% - 15px);
+    height: 45px;
+    border: 0.5px solid #6400E3;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.create_account_validation {
+    width: calc(100% - 40px);
+    height: 35px;
+    border-radius: 5px;
+    background-color: #6400E3;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.create_account_connexion_box {
+    margin-top: 30px;
+    font-weight: 100;
+    color: rgb(128, 128, 128);
+}
+
+.create_account_connexion {
+    color: #6400E3;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}

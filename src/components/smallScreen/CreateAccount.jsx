@@ -17,6 +17,20 @@ function CreateAccount() {
                     <InstaLogo />
                 </button>
             </div>
+            <div className='create_account_hr_box'>
+                <hr className='create_account_hr'/>
+                ou
+                <hr className='create_account_hr'/>
+            </div>
+            <div className='create_account_input_box'>
+                <input className='create_account_input' placeholder="Email"/>
+                <input className='create_account_input' placeholder="Mot de passe"/>
+                <input className='create_account_input' placeholder="Confirmation du mot de passe"/>
+            </div>
+            <button className='create_account_validation'>Valider</button>
+            <div className='create_account_connexion_box'>
+                Déjà Client ? <button className='create_account_connexion'>Connection</button>
+            </div>
         </article>
     )
 }
