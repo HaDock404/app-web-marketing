@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import '../../styles/small_page.css'
 
 import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
@@ -99,6 +102,15 @@ const images= [
 ];
 
 function WebEssentialSmallPage() {
+
+    const [currentIndex, setCurrentIndex] = useState("test");
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        // Navigation vers la nouvelle page avec currentIndex
+        navigate("/connexion", { state: { currentIndex } });
+    };
+
     return (
         <section className="section_small_page">
             <article className="web_essential_small_page_el1">
@@ -195,7 +207,7 @@ function WebEssentialSmallPage() {
                 <MessageOfferSmallPage/>
                 <TemplatesOfferSmallPage images={images}/>
             </article>
-            <ButtonOfferSmallPage />
+            <ButtonOfferSmallPage onclick={handleButtonClick}/>
         </section>
     )
 }

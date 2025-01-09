@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-function ButtonOfferSmallPage() {
+function ButtonOfferSmallPage({onclick}) {
     return (
-        <Link to="/connexion" className="button_offer_small_page">Sélectionner</Link>
+        <button onClick={onclick} className="button_offer_small_page">Sélectionner</button>
     )
 }
 
