@@ -31,7 +31,6 @@ root.render(
           <Route path="/connexion" element={<ConnexionPage />}/>
           <Route path="/a-propos" element={<AboutPage />}/>
         </Routes>
-    <React.StrictMode></React.StrictMode>
   </HashRouter>,
 );
 
