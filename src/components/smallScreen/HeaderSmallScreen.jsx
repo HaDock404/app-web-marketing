@@ -16,9 +16,9 @@ function HeaderSmallScreen() {
                 </label>
 
                 <ul className="menu__box">
-                    <li><Link className="menu__item" to="/">Nos Offres</Link></li>
-                    <li><Link className="menu__item" to="/">Connexion à votre compte</Link></li>
-                    <li><Link className="menu__item" to="/">À Propos</Link></li>
+                    <li><Link className="menu__item" to="/nos-offres">Nos Offres</Link></li>
+                    <li><Link className="menu__item" to="/connexion">Connexion à votre compte</Link></li>
+                    <li><Link className="menu__item" to="/a-propos">À Propos</Link></li>
                     <li><Link className="menu__item" to="/">Mentions Légales</Link></li>
                     <li><Link className="menu__item" to="/">Aide - Contact</Link></li>
                 </ul>
