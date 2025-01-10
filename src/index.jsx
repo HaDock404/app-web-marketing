@@ -14,6 +14,7 @@ import ScrollToTop from "./styles/ScrollToTop";
 import HomePage from './pages/HomePage/HomePage';
 import OffersPage from './pages/Offers/OffersPage'
 import WebEssentialPage from './pages/WebEssential/WebEssentialPage.jsx';
+import RegistrationPage from './pages/Registration/RegistrationPage.jsx'
 import ConnexionPage from './pages/Connexion/ConnexionPage.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,6 +26,7 @@ root.render(
           <Route path="/" element={<HomePage />}/>
           <Route path="/nos-offres" element={<OffersPage />}/>
           <Route path="/web-essential" element={<WebEssentialPage />}/>
+          <Route path="/registration" element={<RegistrationPage />}/>
           <Route path="/connexion" element={<ConnexionPage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>

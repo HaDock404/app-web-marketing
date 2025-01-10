@@ -108,7 +108,7 @@ function WebEssentialSmallPage() {
 
     const handleButtonClick = () => {
         // Navigation vers la nouvelle page avec currentIndex
-        navigate("/connexion", { state: { dataIndex } });
+        navigate("/registration", { state: { dataIndex } });
     };
 
     return (
