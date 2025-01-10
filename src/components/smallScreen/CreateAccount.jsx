@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import FacebookLogo from './FacebookLogo.jsx'
 import GoogleLogo from './GoogleLogo.jsx'
 import InstaLogo from './InstaLogo.jsx'
@@ -28,8 +30,8 @@ function CreateAccount() {
                 <input className='create_account_input' placeholder="Confirmation du mot de passe"/>
             </div>
             <button className='create_account_validation'>Valider</button>
-            <div className='create_account_connexion_box'>
-                Déjà Client ? <button className='create_account_connexion'>Connection</button>
+            <div className='create_account_registration_box'>
+                Déjà Client ? <Link to="/connexion" className='create_account_registration'>Connection</Link>
             </div>
         </article>
     )

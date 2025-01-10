@@ -123,15 +123,16 @@
     border: none;
 }
 
-.create_account_connexion_box {
+.create_account_registration_box {
     margin-top: 30px;
     font-weight: 100;
     color: rgb(128, 128, 128);
 }
 
-.create_account_connexion {
+.create_account_registration {
     color: #6400E3;
     font-weight: bold;
     border: none;
     background-color: white;
+    text-decoration: none;
 }
