@@ -16,6 +16,7 @@ import OffersPage from './pages/Offers/OffersPage'
 import WebEssentialPage from './pages/WebEssential/WebEssentialPage.jsx';
 import RegistrationPage from './pages/Registration/RegistrationPage.jsx'
 import ConnexionPage from './pages/Connexion/ConnexionPage.jsx'
+import AboutPage from './pages/About/AboutPage.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,6 +29,7 @@ root.render(
           <Route path="/web-essential" element={<WebEssentialPage />}/>
           <Route path="/registration" element={<RegistrationPage />}/>
           <Route path="/connexion" element={<ConnexionPage />}/>
+          <Route path="/a-propos" element={<AboutPage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
