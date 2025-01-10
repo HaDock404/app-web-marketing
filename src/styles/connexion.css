@@ -1,7 +1,7 @@
 .connexion_small_page {
     position: relative;
     background-color: #ffffff;
-    min-height: 100vh;
+    overflow: hidden;
 }
 
 .connexion_small_page_el1 {
