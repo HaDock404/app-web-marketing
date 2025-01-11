@@ -1,12 +1,12 @@
 import '../../styles/large_page.css'
 
-import HeaderLargePage from "../../components/HeaderLargePage"
-import OfferTitle from '../../components/OfferTitle'
-import OfferIntro from '../../components/OfferIntro'
-import OfferParagraph from '../../components/OfferParagraph'
+import HeaderLargePage from "../../components/largeScreen/HeaderLargePage"
+import OfferTitle from '../../components/largeScreen/OfferTitle'
+import OfferIntro from '../../components/largeScreen/OfferIntro'
+import OfferParagraph from '../../components/largeScreen/OfferParagraph'
 
-import MessageOfferLargePage from '../../components/MessageOfferLargePage'
-import TemplatesOfferLargePage from '../../components/TemplatesOfferLargePage'
+import MessageOfferLargePage from '../../components/largeScreen/MessageOfferLargePage'
+import TemplatesOfferLargePage from '../../components/largeScreen/TemplatesOfferLargePage'
 
 import screen01 from '../../assets/template_computer_01_00.png'
 import screen02 from '../../assets/template_computer_02_00.png'

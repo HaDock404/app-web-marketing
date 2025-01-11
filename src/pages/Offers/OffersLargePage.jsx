@@ -1,6 +1,6 @@
-import HeaderOffersLargePage from '../../components/HeaderOffersLargePage'
-import IntroOffersLargePage from '../../components/IntroOffersLargePage'
-import AllOffersLargePage from '../../components/AllOffersLargePage'
+import HeaderOffersLargePage from '../../components/largeScreen/HeaderOffersLargePage'
+import IntroOffersLargePage from '../../components/largeScreen/IntroOffersLargePage'
+import AllOffersLargePage from '../../components/largeScreen/AllOffersLargePage'
 
 function OffersLargePage() {
     return (
