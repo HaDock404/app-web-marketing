@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../../styles/large_page.css'
 import Computer from './Computer';
-import ComputerIcon from '../ComputerIcon'
-import Smartphone from '../Smartphone'
-import SmartphoneIcon from '../SmartphoneIcon'
+import ComputerIcon from '../largeScreen/ComputerIcon'
+import Smartphone from '../largeScreen/Smartphone'
+import SmartphoneIcon from '../largeScreen/SmartphoneIcon'
 
 function TemplatesOfferSmallPage({ images, setDataIndex }) {
     const [ImageIndex, setImageIndex] = useState(0)
