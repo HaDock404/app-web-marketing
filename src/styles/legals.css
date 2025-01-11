@@ -1,0 +1,41 @@
+.legals_small_page {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.legals_small_page_el1 {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.title_legals_small_page {
+    width: calc(100% - 40px);
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: auto;
+    color: #6400E3;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.paragraph_legals_small_page {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.bold_color {
+    font-weight: bold;
+    color: #6400E3;
+}
