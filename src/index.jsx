@@ -18,6 +18,7 @@ import RegistrationPage from './pages/Registration/RegistrationPage.jsx'
 import ConnexionPage from './pages/Connexion/ConnexionPage.jsx'
 import AboutPage from './pages/About/AboutPage.jsx'
 import LegalsPage from './pages/Legals/LegalsPage.jsx'
+import CodePage from './pages/Code/CodePage.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -32,6 +33,7 @@ root.render(
           <Route path="/connexion" element={<ConnexionPage />}/>
           <Route path="/a-propos" element={<AboutPage />}/>
           <Route path="/mentions-legales" element={<LegalsPage />}/>
+          <Route path="/code-validation" element={<CodePage />}/>
         </Routes>
   </HashRouter>,
 );
