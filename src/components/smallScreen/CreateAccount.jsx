@@ -1,10 +1,53 @@
 import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
 
 import FacebookLogo from './FacebookLogo.jsx'
 import GoogleLogo from './GoogleLogo.jsx'
 import InstaLogo from './InstaLogo.jsx'
 
 function CreateAccount() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [errors, setErrors] = useState({});
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+    const validateForm = () => {
+        const newErrors = {};
+    
+        // Validation de l'adresse email
+        if (!emailRegex.test(email)) {
+          newErrors.email = "L'adresse email n'est pas valide.";
+        }
+    
+        // Validation du mot de passe
+        if (!passwordRegex.test(password)) {
+          newErrors.password =
+            "Trop peu sécurisé.";
+        }
+    
+        // Validation de la correspondance des mots de passe
+        if (password !== confirmPassword) {
+          newErrors.confirmPassword = "Les mots de passe sont différents.";
+        }
+    
+        setErrors(newErrors);
+    
+        // Retourne true si le formulaire est valide
+        return Object.keys(newErrors).length === 0;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        if (validateForm()) {
+            // Envoyer les données au backend
+            
+        }
+    };
+
     return (
         <article className="create_account_article">
             <h1 className="create_account_h1">Inscription rapide</h1>
@@ -24,12 +67,40 @@ function CreateAccount() {
                 ou
                 <hr className='create_account_hr'/>
             </div>
-            <div className='create_account_input_box'>
-                <input className='create_account_input' placeholder="Email"/>
-                <input className='create_account_input' placeholder="Mot de passe"/>
-                <input className='create_account_input' placeholder="Confirmation du mot de passe"/>
-            </div>
-            <button className='create_account_validation'>Valider</button>
+            <form className='create_account_input_box' onSubmit={handleSubmit}>
+                <div className='create_account_input_div'>
+                    <input 
+                        className='create_account_input' 
+                        placeholder="Email"
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    {errors.email && <div className='create_account_input_error-message'>{errors.email}</div>}
+                </div>
+                <div className='create_account_input_div'>
+                    <input 
+                        className='create_account_input' 
+                        placeholder="Mot de passe"
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    {errors.password && <div className='create_account_input_error-message'>{errors.password}</div>}
+                </div>
+                <div className='create_account_input_div'>
+                    <input 
+                        className='create_account_input' 
+                        placeholder="Confirmation du mot de passe"
+                        type="password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                    />
+                    {errors.confirmPassword && (<div className='create_account_input_error-message'>{errors.confirmPassword}</div>)}
+                </div>
+                
+                <button type="submit" className='create_account_validation'>Valider</button>
+            </form>
             <div className='create_account_registration_box'>
                 Déjà Client ? <Link to="/connexion" className='create_account_registration'>Connection</Link>
             </div>

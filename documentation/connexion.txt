@@ -1,0 +1,66 @@
+Étape 1 : Vérification de l'adresse mail
+
+- Utiliser une regex pour vérifier le format de l'adresse mail est une bonne pratique.
+- Vérifier ensuite dans la base de données avec une requête SELECT si l'adresse n'existe pas déjà est également approprié. Cependant :
+    - Sécurité : Assure-toi de protéger cette requête contre les attaques SQL injection en utilisant des requêtes préparées ou des ORM.
+    - Performance : Si tu as beaucoup d'utilisateurs, pense à indexer la colonne des emails dans ta base de données.
+
+Étape 2 : Création du mot de passe
+
+- Vérifier le format avec une regex côté client est une bonne idée pour une validation rapide.
+- Sécurité :
+    - N'oublie pas de refaire une validation côté serveur avant d'accepter le mot de passe. Les validations côté client peuvent être contournées.
+    - Applique des règles de sécurité pour les mots de passe : longueur minimale (ex. 8 caractères), majuscules, minuscules, chiffres, caractères spéciaux, etc.
+    - Utilise une bibliothèque comme zxcvbn.js pour aider l'utilisateur à choisir un mot de passe sécurisé.
+
+Étape 3 : Création de compte et envoi du code de vérification
+
+1. INSERT dans la base de données :
+- Sécurité :
+    - Les mots de passe doivent être hachés avant d'être insérés dans la base de données. Utilise une fonction de hachage robuste comme bcrypt.
+    - Jamais enregistrer de mot de passe en clair !
+
+2. Génération du code de vérification :
+- Performance : Génére un code court (par ex., 6 chiffres ou caractères alphanumériques).
+- Sécurité :
+    - Stocke le code de manière sécurisée, idéalement avec une date d'expiration pour limiter sa validité.
+    - Assure-toi que le code est unique par utilisateur (par exemple, avec une combinaison adresse email + code).
+
+3.Envoi de l'email :
+- Utilise une bibliothèque ou un service comme Nodemailer (Node.js) ou un service tiers comme SendGrid pour envoyer l'email.
+- Prends en compte les règles anti-spam pour que tes emails arrivent bien à destination (par exemple, en configurant un domaine avec SPF, DKIM, etc.).
+
+Étape 4 : Validation du code de vérification
+
+- L'utilisateur saisit le code de vérification dans une nouvelle page.
+- Le serveur vérifie la correspondance du code avec la base de données via une requête SELECT.
+- Sécurité :
+    - Supprime ou invalide le code une fois utilisé pour éviter les réutilisations frauduleuses.
+    - Assure-toi de bien valider que l'email associé au code correspond bien à l'utilisateur en cours.
+
+Points généraux
+1. Gestion des erreurs :
+- Prends en charge les erreurs possibles (ex. : email déjà utilisé, code invalide ou expiré).
+- Affiche des messages d'erreur clairs, mais sans donner trop d'informations aux attaquants (par exemple, ne pas révéler si une adresse email existe déjà).
+
+2.Protection des données :
+- Utilise HTTPS pour sécuriser toutes les communications entre le client et le serveur.
+- Protège les sessions utilisateur avec des mécanismes comme des tokens ou des cookies sécurisés.
+
+3. Audit de sécurité :
+- Fais passer ton code et ton application par un audit de sécurité pour identifier les failles potentielles.
+
+Flux amélioré
+
+1. Client-side :
+- Vérification du format email avec regex.
+- Vérification de la force du mot de passe avec regex ou une bibliothèque dédiée.
+
+2. Server-side :
+- Vérification du format email et validation dans la base de données.
+- Hachage du mot de passe avant de l'insérer.
+- Génération et stockage sécurisé du code de vérification avec une date d'expiration.
+- Envoi d'un email avec le code de vérification.
+
+3. Post-validation :
+- Une fois le code validé, mettre à jour l'utilisateur dans la base de données pour confirmer son inscription.
