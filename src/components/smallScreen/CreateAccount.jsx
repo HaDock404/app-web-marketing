@@ -40,12 +40,32 @@ function CreateAccount() {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
     
         if (validateForm()) {
-            // Envoyer les données au backend
-            navigate("/code-validation");
+            try {
+              const response = await fetch('http://localhost:3001/create-user', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password }),
+              });
+        
+              const data = await response.json();
+        
+              if (response.ok) {
+                alert(data.message);
+                // Réinitialiser le formulaire
+                setEmail('');
+                setPassword('');
+                setConfirmPassword('');
+                navigate("/code-validation");
+              } else {
+                alert(data.message);
+              }
+            } catch (err) {
+              alert('Erreur lors de la création de l\'utilisateur.');
+            }
         }
     };
 
