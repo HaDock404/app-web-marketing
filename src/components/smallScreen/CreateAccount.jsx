@@ -10,7 +10,7 @@ function CreateAccount() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [errors, setErrors] = useState({});
-     const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -42,10 +42,10 @@ function CreateAccount() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         if (validateForm()) {
             try {
-              const response = await fetch('http://localhost:3001/create-user', {
+              const response = await fetch('http://localhost:3001/api/users/create-user', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
@@ -61,10 +61,11 @@ function CreateAccount() {
                 setConfirmPassword('');
                 navigate("/code-validation");
               } else {
+                console.error('Erreur backend:', data);
                 alert(data.message);
               }
             } catch (err) {
-              alert('Erreur lors de la création de l\'utilisateur.');
+                alert('Erreur lors de la création de l\'utilisateur.');
             }
         }
     };
