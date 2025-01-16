@@ -49,6 +49,7 @@ function CreateAccount() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
+                credentials: 'include', // Inclut les cookies dans la requête
               });
         
               const data = await response.json();
