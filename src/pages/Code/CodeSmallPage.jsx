@@ -1,6 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import React, { useState } from 'react';
 
+import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
+import CodeTitle from '../../components/smallScreen/CodeTitle'
+
 function CodeSmallPage() {
     const [code, setCode] = useState('');
     const [errors, setErrors] = useState({});
@@ -42,17 +45,24 @@ function CodeSmallPage() {
     };
 
     return (
-        <div>Code small Page
-            <form onSubmit={handleSubmit}>
-                <input 
-                    type="number"
-                    value={code}
-                    onChange={(e) => setCode(e.target.value)}
-                />
-                <button type='submit'>Submit</button>
-            </form>
+        <section className="code_small_page">
+            <article className="code_small_page_el1">
+                <HeaderSmallScreen />
+                <CodeTitle title="Plus qu'une étape.."/>
+            </article>
+            <article className="code_small_page_el2">
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type="number"
+                        value={code}
+                        onChange={(e) => setCode(e.target.value)}
+                    />
+                    <button type='submit'>Submit</button>
+                </form>
+            </article>
             
-        </div>
+            
+        </section>
     )
 }
 
