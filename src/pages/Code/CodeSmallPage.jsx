@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
 import CodeTitle from '../../components/smallScreen/CodeTitle'
+import FormCode from '../../components/smallScreen/FormCode';
 
 function CodeSmallPage() {
     const [code, setCode] = useState('');
@@ -51,6 +52,7 @@ function CodeSmallPage() {
                 <CodeTitle title="Plus qu'une étape.."/>
             </article>
             <article className="code_small_page_el2">
+                <FormCode />
                 <form onSubmit={handleSubmit}>
                     <input 
                         type="number"
