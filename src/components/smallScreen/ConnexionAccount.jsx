@@ -8,7 +8,6 @@ import InstaLogo from './InstaLogo.jsx'
 function CreateAccount() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
@@ -38,8 +37,7 @@ function CreateAccount() {
                 // Réinitialiser le formulaire
                 setEmail('');
                 setPassword('');
-                setConfirmPassword('');
-                //navigate("/dashboard");
+                navigate("/dashboard");
               } else {
                 console.error('Erreur backend:', data);
                 alert(data.message);
