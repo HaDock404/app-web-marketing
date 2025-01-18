@@ -20,6 +20,7 @@ import AboutPage from './pages/About/AboutPage.jsx'
 import LegalsPage from './pages/Legals/LegalsPage.jsx'
 import CodePage from './pages/Code/CodePage.jsx'
 import DashboardPage from './pages/Dashboard/DashboardPage.jsx'
+import ProtectedRoute from './pages/ProtectedRoute/ProtectedRoute.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -35,7 +36,14 @@ root.render(
           <Route path="/a-propos" element={<AboutPage />}/>
           <Route path="/mentions-legales" element={<LegalsPage />}/>
           <Route path="/code-validation" element={<CodePage />}/>
-          <Route path="/dashboard" element={<DashboardPage />}/>
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
   </HashRouter>,
 );
