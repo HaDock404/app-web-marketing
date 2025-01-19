@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
+import Disconnect from '../../components/smallScreen/Disconnect'
+
 function DashboardSmallPage() {
     const [userEmail, setUserEmail] = useState('');
     const [error, setError] = useState('');
@@ -31,14 +34,23 @@ function DashboardSmallPage() {
       }
 
     return (
-        <div>
-            <h1>Bienvenue au tableau de bord</h1>
+        <section className="dashboard_small_page">
+          <article className="dashboard_small_page_el1">
+                <HeaderSmallScreen />
+                <Disconnect />
+          </article>
+          <article className="dashboard_small_page_el2">
+                
+          </article>
+
+
             {userEmail ? (
                 <p>Adresse email : {userEmail}</p>
             ) : (
                 <p>Chargement des données utilisateur...</p>
             )}
-        </div>
+            <div style={{width:'100%', height:'1000px', backgroundColor:'red'}}></div>
+        </section>
     )
 }
 
