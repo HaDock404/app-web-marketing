@@ -55,7 +55,7 @@ function CreateAccount() {
               const data = await response.json();
         
               if (response.ok) {
-                alert(data.message);
+                //alert(data.message);
                 // Réinitialiser le formulaire
                 setEmail('');
                 setPassword('');
