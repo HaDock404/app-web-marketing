@@ -6,6 +6,7 @@ import GoogleLogo from './GoogleLogo.jsx'
 import InstaLogo from './InstaLogo.jsx'
 
 function CreateAccount() {
+    const [code, setCode] = useState(0)
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({});
@@ -31,14 +32,19 @@ function CreateAccount() {
               });
         
               const data = await response.json();
-        
-              if (response.ok) {
+
+            if (response.ok) {
                 //alert(data.message);
                 // Réinitialiser le formulaire
                 setEmail('');
                 setPassword('');
-                navigate("/dashboard");
-              } else {
+                if (data.data.verified === 1) {
+                    navigate("/dashboard");
+                } else {
+                    navigate("/code-validation");
+                }
+                
+            } else {
                 console.error('Erreur backend:', data);
                 alert(data.message);
               }

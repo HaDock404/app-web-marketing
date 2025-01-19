@@ -33,7 +33,8 @@ function FormCode() {
                 });
             
                 if (response.ok) {
-                    console.log('Code Validé');
+                    //console.log('Code Validé');
+                    navigate("/dashboard");
                 } else {
                     const errorData = await response.json();
                     console.error('Erreur lors de la validation :', errorData.message);
