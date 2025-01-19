@@ -17,7 +17,7 @@ function HeaderOffersLargePage() {
 
                 <ul className="menu__box">
                 <li><Link className="menu__item" to="/nos-offres">Nos Offres</Link></li>
-                <li><Link className="menu__item" to="/connexion">Connexion à votre compte</Link></li>
+                <li><Link className="menu__item" to="/dashboard">Compte Client</Link></li>
                 <li><Link className="menu__item" to="/a-propos">À Propos</Link></li>
                 <li><Link className="menu__item" to="/mentions-legales">Mentions Légales</Link></li>
                 <li><Link className="menu__item" to="/">Aide - Contact</Link></li>
