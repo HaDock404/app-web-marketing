@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
 import Disconnect from '../../components/smallScreen/Disconnect'
 import DashboardBox from '../../components/smallScreen/DashboardBox';
+import DashboardBoxParams from '../../components/smallScreen/DashboardBoxParams';
 
 function DashboardSmallPage() {
     const [userEmail, setUserEmail] = useState('');
@@ -42,6 +43,7 @@ function DashboardSmallPage() {
           </article>
           <article className="dashboard_small_page_el2">
                 <DashboardBox />
+                <DashboardBoxParams />
           </article>
 
 
