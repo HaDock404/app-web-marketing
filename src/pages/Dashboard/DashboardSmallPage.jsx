@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import HeaderSmallScreen from '../../components/smallScreen/HeaderSmallScreen'
 import Disconnect from '../../components/smallScreen/Disconnect'
+import DashboardBox from '../../components/smallScreen/DashboardBox';
 
 function DashboardSmallPage() {
     const [userEmail, setUserEmail] = useState('');
@@ -40,7 +41,7 @@ function DashboardSmallPage() {
                 <Disconnect />
           </article>
           <article className="dashboard_small_page_el2">
-                
+                <DashboardBox />
           </article>
 
 
