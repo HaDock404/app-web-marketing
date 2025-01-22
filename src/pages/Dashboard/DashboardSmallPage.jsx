@@ -52,7 +52,6 @@ function DashboardSmallPage() {
             ) : (
                 <p>Chargement des données utilisateur...</p>
             )}
-            <div style={{width:'100%', height:'1000px', backgroundColor:'red'}}></div>
         </section>
     )
 }
