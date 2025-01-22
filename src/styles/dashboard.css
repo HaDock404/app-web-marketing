@@ -128,10 +128,32 @@
     font-weight: bold;
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .dashboard_box_params_ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.dashboard_box_params_li {
+    margin-left: 20px;
+    color: #6400E3;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dashboard_box_params_svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
